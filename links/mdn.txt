@@ -1,5 +1,0 @@
--- Anchor Elements
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a
-
--- Gives a random image of size 200 for example
-https://picsum.photos/200
