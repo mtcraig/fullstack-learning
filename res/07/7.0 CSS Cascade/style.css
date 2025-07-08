@@ -1,0 +1,27 @@
+/* Don't change the existing CSS. */
+
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+
+/* specificity over .box */
+#outer-box{
+  background:purple;
+}
+
+/* has to be below .box - order */
+.inner-box{
+  padding: 10px;
+  background:red;
+}
+
+.white-text{
+  color:white;
+}
