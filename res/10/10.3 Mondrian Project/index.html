@@ -19,11 +19,76 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+    .container{
+      display: grid;
+      /* background: #000; */
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 10px;
+      height: 100vh;
+      align-content: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    #canvas{
+      background:#000;
+      grid-area: 1 / 1 / 5 / 5;
+      z-index: -1;
+    }
+    #red{
+      background:#E72F24;
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    #blue{
+      background:#004592;
+      grid-area: 2 / 4 / 3 / 5;
+    }
+    #yellow{
+      background:#F9D01E;
+      grid-area: 4 / 2 / 5 / 3;
+    }
+    #black{
+      background:#232629;
+      grid-area: 4 / 3 / 5 / 4;
+    }
+    .base{
+      background:#F0F1EC;
+    }
+    #plain-1{
+      grid-area: 1 / 2 / 2 / 5;
+    }
+    #plain-2{
+      grid-area: 2 / 1 / 4 / 2;
+    }
+    #plain-3{
+      grid-area: 2 / 2 / 4 / 4;
+    }
+    #plain-4{
+      grid-area: 3 / 4 / 5 / 5;
+    }
+    #plain-5{
+      grid-area: 4 / 1 / 5 / 2;
+    }
+    
   </style>
 </head>
 
 <body>
   <!-- Write your HTML here -->
+   <div class="container">
+      <div id="red"></div>
+      <div id="plain-1" class="base"></div>
+      <div id="plain-2" class="base"></div>
+      <div id="plain-3" class="base"></div>
+      <div id="blue"></div>
+      <div id="plain-4" class="base"></div>
+      <div id="plain-5" class="base"></div>
+      <div id="yellow"></div>
+      <div id="black"></div>
+      <div id="canvas"></div>
+      <!-- <div id="borders"></div> -->
+   </div>
 </body>
 
 </html>
