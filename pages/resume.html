@@ -1,104 +1,539 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-bs-theme="dark">
     <head>
         <meta charset="UTF-8">
         <title>Michael Craig - Resume</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <style>
+            body {margin-top:7rem}
+            #navbar {
+                margin-left: 50px;
+                margin-right: 50px;
+                background-color: #212529;
+            }
+            #footbar {
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            .skills {
+                height: 7rem;
+            }
+        </style>
     </head>
     <body>
-        <h1>Michael Craig - Resume</h1>
 
-        <hr/>
+        <header id="navbar" class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom fixed-top">
+            <a href="./index.html"
+               class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+               <img src="../assets/me.jpg" alt="Michael Craig" class="rounded-circle me-2" width="50" height="50">
+               <span class="fs-4"><h1>Michael Craig</h1></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="../pages/about.html" class="nav-link">About Me</a></li>
+                    <li class="nav-item"><a href="../pages/resume.html" class="nav-link active" aria-current="page">Resume</a></li>
+                    <li class="nav-item"><a href="../pages/portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="../pages/getintouch.html" class="nav-link">Get in Touch</a></li>
+                </ul>
+            </div>
+        </header>
 
-        <h2>Summary</h2>
-            <p>
-                <img src="../assets/me.jpg">
-            </p>
-            <p>
-                Senior consultant with over 10 years of experience in the Financial Services sector, with a track record of delivering on high profile regulatory projects from PPI Remediation, data platform Migration, HMT Breathing Space, and more. Experienced in working with advanced technologies such as SAS, SQL, Snowflake, Power BI and significant experience in standing up tactical processes to meet tight regulatory guidelines to keep our clients compliant. An eye for detail and a creative instinct to take requirements and evolve them into forward thinking designs, through operational solution design to data investigation and analysis, MI and dashboard creation, and beyond.
-            </p>
+        <div class="container px-4 py-50">
+            <div class="mt-5 p-5 text-center bg-body-tertiary rounded-3">
+                <h1 class="text-body-emphasis">Senior Consultant</h1>
+                <p class="lead">
+                    Senior consultant with over 10 years of experience in the Financial Services sector, with a track record of
+                    delivering on high profile regulatory projects from PPI Remediation, data platform Migration, HMT Breathing
+                    Space, and more. Experienced in working with advanced technologies such as SAS, SQL, Snowflake, Power BI and
+                    significant experience in standing up tactical processes to meet tight regulatory guidelines to keep our clients
+                    compliant. An eye for detail and a creative instinct to take requirements and evolve them into forward thinking
+                    designs, through operational solution design to data investigation and analysis, MI and dashboard creation, and
+                    beyond.
+                </p>
+            </div>
+        </div>
 
-        <hr/>
+        <div class="container px-4 py-5" id="icon-grid">
+            <h2 class="pb-2 border-bottom">Qualifications</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                <div class="col d-flex align-items-start">
+                    <img src="../assets/quals/aws-cp.png" alt="AWS Cloud Practitioner" class="bi text-body-secondary flex-shrink-0 me-3"
+                        width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">AWS Cloud Practitioner</h3>
+                        <!-- <p>Paragraph of text beneath the heading to explain the heading.</p> -->
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <img src="../assets/quals/ms-az-f.png" alt="Microsoft Azure Fundamentals" class="bi text-body-secondary flex-shrink-0 me-3"
+                        width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Azure Fundamentals</h3>
+                        <!-- <p>Paragraph of text beneath the heading to explain the heading.</p> -->
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <img src="../assets/quals/aws-cp.png" alt="AWS Cloud Practitioner" class="bi text-body-secondary flex-shrink-0 me-3"
+                        width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">MCSA BI Reporting</h3>
+                        <p>Power BI</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <img src="../assets/quals/pcep.png" alt="PCEP" class="bi text-body-secondary flex-shrink-0 me-3"
+                        width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">PCEP</h3>
+                        <p>Entry Level Python Programmer</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <img src="../assets/quals/sas-cp.png" alt="SAS Certified Professional" class="bi text-body-secondary flex-shrink-0 me-3"
+                        width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">SAS Certified Professional</h3>
+                        <p>Advanced Programming Using SAS 9.4</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <img src="../assets/quals/sas-cs.png" alt="SAS Certified Specialist" class="bi text-body-secondary flex-shrink-0 me-3"
+                        width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">SAS Certified Specialist</h3>
+                        <p>Base Programming Using SAS 9.4</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <img src="../assets/quals/aws-cp.png" alt="AWS Cloud Practitioner" class="bi text-body-secondary flex-shrink-0 me-3"
+                        width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Analysing and Visualising Data</h3>
+                        <p>with Microsoft Excel</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <img src="../assets/quals/aws-cp.png" alt="AWS Cloud Practitioner" class="bi text-body-secondary flex-shrink-0 me-3"
+                        width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Automotive Engineering Design BEng</h3>
+                        <p>First w/ Honours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <h2>Qualifications</h2>
-            <ul>
-                <li>AWS Cloud Practitioner
-                <li>Azure Fundamentals</li>
-                <li>MCSA BI Reporting</li>
-                <li>PCEP - Entry Level Python Programmer</li>
-                <li>SAS Certified Professional: Advanced Programming Using SAS 9.4</li>
-                <li>SAS Certified Specialist: Base Programming Using SAS 9.4</li>
-                <li>Analysing and Visualising Data with Microsoft Excel</li>
-                <li>Automotive Engineering Design BEng - First w/ Honours</li>
-            </ul>
 
-        <hr/>
+        <div class="container px-4 py-5" id="icon-grid">
+            <h2 class="pb-2 border-bottom">Technical Skills</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/excel.png" alt="Microsoft Excel" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Microsoft Excel</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/office.png" alt="Microsoft Office" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Microsoft Office Suite</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/sas.png" alt="SAS" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">SAS Enterprise Guide</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/sas.png" alt="SAS" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">SAS Programming</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/sql.png" alt="SQL" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">SQL</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/teradata.png" alt="Teradata" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Teradata</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/power-bi.png" alt="Power BI" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Microsoft Power BI</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/sas.png" alt="SAS" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">SAS DI Studio</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/hadoop.png" alt="Hadoop" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Hadoop</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/access.png" alt="Access" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Microsoft Access Database</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/github.png" alt="GitHub" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">GitHub</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/sas.png" alt="SAS" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">SAS Studio</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/jira.png" alt="Jira" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Jira</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/gitlab.png" alt="GitLab" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">GitLab</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/datagrip.png" alt="DataGrip" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">DataGrip</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/ms-sql-server.png" alt="Microsoft SQL Server" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Microsoft SQL Server</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/python.png" alt="Python" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Python</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/sas.png" alt="SAS" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">SAS DataFlux</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/sas.png" alt="SAS" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">SAS Management Console</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/snowflake.png" alt="Snowflake" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Snowflake</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/tableau.png" alt="Tableau" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Tableau</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/unix.png" alt="UNIX" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Unix</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/vba.svg" alt="VBA" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">VBA Programming</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills"> <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em"
+                        height="1.75em" aria-hidden="true">
+                        <use xlink:href="#tools"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">IBM LSF Process Manager</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/hue.png" alt="Hue" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Hue</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/jupyter.png" alt="Jupyter" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Jupyter Notebook</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/sap-bo.png" alt="SAP Business Objects" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">SAP Business Objects</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/confluence.png" alt="Confluence" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Confluence</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/bitbucket.png" alt="BitBucket" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">BitBucket</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/html5.png" alt="HTML5" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">HTML</h3>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/Bootstrap.png" alt="Bootstrap" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" height="50" aria-hidden="true">
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Bootstrap</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <h2>Skills</h2>
-            <ul>
-                <li>Technical
-                    <ul>
-                        <li>Microsoft Excel</li>
-                        <li>Microsoft Office Suite</li>
-                        <li>SAS Enterprise Guide</li>
-                        <li>SAS Programming</li>
-                        <li>SQL</li>
-                        <li>Teradata</li>
-                        <li>Microsoft Power BI</li>
-                        <li>SAS DI Studio</li>
-                        <li>Hadoop</li>
-                        <li>Microsoft Access Database</li>
-                        <li>GitHub</li>
-                        <li>SAS Studio</li>
-                        <li>Jira</li>
-                        <li>GitLab</li>
-                        <li>DataGrip</li>
-                        <li>Microsoft SQL Server</li>
-                        <li>Python</li>
-                        <li>SAS DataFlux</li>
-                        <li>SAS Management Console</li>
-                        <li>SnowFlake</li>
-                        <li>Tableau Desktop</li>
-                        <li>SAS Viya</li>
-                        <li>Unix</li>
-                        <li>VBA Programming</li>
-                        <li>IBM LSF Process Manager</li>
-                        <li>HUE</li>
-                        <li>Jupyter Notebook</li>
-                        <li>SAP Business Objects</li>
-                        <li>Confluence</li>
-                        <li>BitBucket</li>
-                    </ul>
-                </li>
-                <li>Domain and Functional
-                    <ul>
-                        <li>Data Migration</li>
-                        <li>MI Reporting and Dashboards</li>
-                        <li>Development</li>
-                        <li>Solution Design</li>
-                        <li>Regulatory Reporting</li>
-                        <li>Data Visualisation</li>
-                        <li>Customer Insight</li>
-                        <li>Marketing</li>
-                        <li>Credit Cards</li>
-                        <li>Remediation</li>
-                        <li>Complaints</li>
-                    </ul>
-                </li>
-            </ul>
 
-        <hr/>
+        <div class="container px-4 py-5" id="icon-grid">
+            <h2 class="pb-2 border-bottom">Domain and Functional Skills</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                <div class="col d-flex align-items-start skills"> <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em"
+                        height="1.75em" aria-hidden="true">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Data Migration</h3>
+                        <!-- <p>Paragraph of text beneath the heading to explain the heading.</p> -->
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills"> <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em"
+                        height="1.75em" aria-hidden="true">
+                        <use xlink:href="#cpu-fill"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">MI Reporting and Dashboards</h3>
+                        <!-- <p>Paragraph of text beneath the heading to explain the heading.</p> -->
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills"> <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em"
+                        height="1.75em" aria-hidden="true">
+                        <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Development</h3>
+                        <!-- <p>Power BI</p> -->
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills"> <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em"
+                        height="1.75em" aria-hidden="true">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Solution Design</h3>
+                        <!-- <p>Entry Level Python Programmer</p> -->
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills"> <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em"
+                        height="1.75em" aria-hidden="true">
+                        <use xlink:href="#speedometer2"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Regulatory Reporting</h3>
+                        <!-- <p>Advanced Programming Using SAS 9.4</p> -->
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills"> <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em"
+                        height="1.75em" aria-hidden="true">
+                        <use xlink:href="#toggles2"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Analysing and Visualising Data</h3>
+                        <!-- <p>Base Programming Using SAS 9.4</p> -->
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills"> <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em"
+                        height="1.75em" aria-hidden="true">
+                        <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Data Visualisation</h3>
+                        <!-- <p>with Microsoft Excel</p> -->
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills"> <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em"
+                        height="1.75em" aria-hidden="true">
+                        <use xlink:href="#tools"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Customer Insight</h3>
+                        <!-- <p>First w/ Honours</p> -->
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills"> <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em"
+                        height="1.75em" aria-hidden="true">
+                        <use xlink:href="#tools"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Marketing</h3>
+                        <!-- <p>First w/ Honours</p> -->
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills"> <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em"
+                        height="1.75em" aria-hidden="true">
+                        <use xlink:href="#tools"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Credit Cards</h3>
+                        <!-- <p>First w/ Honours</p> -->
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills"> <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em"
+                        height="1.75em" aria-hidden="true">
+                        <use xlink:href="#tools"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Remediation</h3>
+                        <!-- <p>First w/ Honours</p> -->
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start skills"> <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em"
+                        height="1.75em" aria-hidden="true">
+                        <use xlink:href="#tools"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Complaints</h3>
+                        <!-- <p>First w/ Honours</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container px-4 py-5" id="featured-3">
+            <h2 class="pb-2 border-bottom">Experience</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                            <use xlink:href="#collection"></use>
+                        </svg> </div>
+                    <h3 class="fs-2 text-body-emphasis">Data Analyst / Consultant</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+                        probably just keep going until we run out of words.</p>
+                </div>
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                            <use xlink:href="#people-circle"></use>
+                        </svg> </div>
+                    <h3 class="fs-2 text-body-emphasis">Migration / Separation Consultant</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+                        probably just keep going until we run out of words.</p>
+                </div>
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                            <use xlink:href="#toggles2"></use>
+                        </svg> </div>
+                    <h3 class="fs-2 text-body-emphasis">Incident Resolution Analyst</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+                        probably just keep going until we run out of words.</p>
+                </div>
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                            <use xlink:href="#toggles2"></use>
+                        </svg> </div>
+                    <h3 class="fs-2 text-body-emphasis">Data Analyst</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+                        probably just keep going until we run out of words.</p>
+                </div>
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                            <use xlink:href="#toggles2"></use>
+                        </svg> </div>
+                    <h3 class="fs-2 text-body-emphasis">Data Quality Analyst</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+                        probably just keep going until we run out of words.</p>
+                </div>
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                            <use xlink:href="#toggles2"></use>
+                        </svg> </div>
+                    <h3 class="fs-2 text-body-emphasis">Data Insight Analyst</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+                        probably just keep going until we run out of words.</p>
+                </div>
+            </div>
+        </div>
 
         <h2>Experience</h2>
-
-            <h3>Roles Undertaken</h3>
-                <ul>
-                    <li>Data Analyst / Consultant</li>
-                    <li>Migration Consultant</li>
-                    <li>Incident Resolution Analyst</li>
-                    <li>Data Analyst</li>
-                    <li>Data Quality Analyst</li>
-                    <li>Data Insight Analyst</li>
-                </ul>
 
             <h3>Recent Assignments</h3>
 
@@ -140,7 +575,44 @@
                             </ul>
                         </li>
                     </ul>
-
+                    <div class="d-flex gap-2 justify-content-center py-5">
+                        <span
+                            class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                            <img class="rounded-circle me-1" width="24" height="24" src="../assets/tech/sas.png" alt="SAS EG / Studio">SAS EG / Studio
+                        </span>
+                        <span
+                            class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                            <img class="rounded-circle me-1" width="24" height="24" src="../assets/tech/python.png" alt="Python">Python
+                        </span>
+                        <span
+                            class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                            <img class="rounded-circle me-1" width="24" height="24" src="../assets/tech/tableau.png" alt="Tableau">Tableau
+                        </span>
+                        <span
+                            class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                            <img class="rounded-circle me-1" width="24" height="24" src="../assets/tech/power-bi.png" alt="Power BI">Power BI
+                        </span>
+                        <span
+                            class="badge d-flex align-items-center p-1 pe-2 text-info-emphasis bg-info-subtle border border-info-subtle rounded-pill">
+                            <img class="rounded-circle me-1" width="24" height="24" src="../assets/tech/snowflake.png" alt="Snowflake">Snowflake
+                        </span>
+                        <span
+                            class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis bg-dark-subtle border border-dark-subtle rounded-pill">
+                            <img class="rounded-circle me-1" width="24" height="24" src="../assets/tech/datagrip.png" alt="DataGrip">DataGrip
+                        </span>
+                        <span
+                            class="badge d-flex align-items-center p-1 pe-2 text-info-emphasis bg-info-subtle border border-info-subtle rounded-pill">
+                            <img class="rounded-circle me-1" width="24" height="24" src="../assets/tech/hue.png" alt="Hue">Hadoop / Hue
+                        </span>
+                        <span
+                            class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                            <img class="rounded-circle me-1" width="24" height="24" src="../assets/tech/ms-sql-server.png" alt="Microsoft SQL Server">Microsoft SQL Server
+                        </span>
+                        <span
+                            class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                            <img class="rounded-circle me-1" width="24" height="24" src="../assets/tech/teradata.png" alt="Teradata">Teradata
+                        </span>
+                    </div>
                 <h4>Retail Bank - Data Migration / Separation - Migration Consultant</h4>
                     <ul>
                         <li>
@@ -257,7 +729,25 @@
         <hr/>
 
     </body>
-    <footer>
-        &copy; Copright Michael Craig 2025
+
+    <footer id="footbar" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center"> <a href="/"
+                class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> <svg
+                    class="bi" width="30" height="24" aria-hidden="true">
+                    <use xlink:href="#bootstrap"></use>
+                </svg> </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© Michael Craig</br>Icons courtesy of: <a href="credly.com">Credly</a>, <a href="icons8.com">Icons8</a>, <a href="pngwing.com">PNGWing</a>, and <a href="pngegg.com">PNGEgg</a></span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><svg class="bi" width="24"
+                        height="24" aria-hidden="true">
+                        <use xlink:href="#instagram"></use>
+                    </svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><svg class="bi" width="24"
+                        height="24">
+                        <use xlink:href="#facebook"></use>
+                    </svg></a></li>
+        </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </html>
