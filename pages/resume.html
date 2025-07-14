@@ -8,21 +8,24 @@
             body {
                 margin-top: 7rem
             }
-            #navbar {
-                display: inline-flex;
+            /* #topnav {
                 margin-left: 50px;
                 margin-right: 50px;
                 background-color: #212529;
-            }
-            #footbar {
+            } */
+            /* #footbar {
                 margin-left: 50px;
                 margin-right: 50px;
-            }
+            } */
             .skills {
                 height: 7rem;
+                padding-left: 3rem;
+                padding-right: 3rem;
             }
             .qual-item {
                 height: 10rem;
+                padding-left: 3rem;
+                padding-right: 3rem;
             }
             .badge-grid {
                 display: flex;
@@ -34,30 +37,53 @@
     </head>
     <body>
 
-        <header id="navbar" class="d-flex flex-wrap justify-content-center align-items-center py-3 mb-4 border-bottom fixed-top">
+        <nav id="topnav" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
             <div>
                 <a href="../index.html"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <img src="../assets/me.jpg" alt="Michael Craig" class="rounded-circle me-2" width="50" height="50">
-                <span class="fs-4"><h1>Michael Craig</h1></span>
+                class="d-flex align-items-center px-3 me-md-auto link-body-emphasis text-decoration-none">
+                    <img src="../assets/me.jpg" alt="Michael Craig" class="rounded-circle me-2" width="50" height="50">
+                    <span class="fs-4 px-3"><h1>Michael Craig</h1></span>
                 </a>
             </div>
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-            <div>
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="../pages/about.html" class="nav-link">About Me</a></li>
-                    <li class="nav-item"><a href="../pages/resume.html" class="nav-link active" aria-current="page">Resume</a></li>
-                    <li class="nav-item"><a href="../pages/portfolio.html" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="../pages/getintouch.html" class="nav-link">Get in Touch</a></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-pills ms-auto mx-3">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="../pages/about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 active" href="../pages/resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Portfolio
+                        </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../pages/portfolio.html">Overview</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Portfolio Item #1</a></li>
+                        <li><a class="dropdown-item" href="#">Portfolio Item #2</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Portfolio Item #3</a></li>
+                        <li><a class="dropdown-item" href="#">Portfolio Item #4</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" aria-disabled="true">Get in Touch</a>
+                    </li>
                 </ul>
             </div>
-        </header>
+        </div>
+        </nav>
 
         <div class="container px-4 pt-50">
-            <div class="mt-5 p-5 text-center bg-body-tertiary rounded-3">
+            <div class="mt-5 p-5 text-center bg-primary-subtle rounded-3">
                 <h1 class="text-body-emphasis">Senior Consultant</h1>
                 <p class="lead">
                     Senior consultant with over 10 years of experience in the Financial Services sector, with a track record of
@@ -70,6 +96,33 @@
                 </p>
             </div>
         </div>
+
+
+        <div class="container px-4 pt-5" id="featured-3">
+            <h2 class="pb-2 border-bottom">History</h2>
+            <div class="list-group pt-5 mx-4">
+                <a class="list-group-item d-flex gap-3 py-3 bg-primary-subtle"
+                    aria-current="true"> <img src="../assets/emp/talan.svg" alt="" height="50" flex-shrink-0">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h4 class="mb-0">Talan Data & AI UK</h4>
+                            <p class="mb-0 opacity-75">Senior Consultant</p>
+                        </div>
+                        <small class="opacity-100 text-nowrap">2018 - now</small>
+                    </div>
+                </a>
+                <a class="list-group-item d-flex gap-3 py-3"
+                    aria-current="true"> <img src="../assets/emp/sopra.png" alt="Sopra Steria" height="32" flex-shrink-0">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                        <div>
+                            <h4 class="mb-0 opacity-50">Sopra Steria</h4>
+                            <p class="mb-0 opacity-25">Consultant</p>
+                        </div> <small class="opacity-50 text-nowrap">2014 - 2018</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+
 
         <div class="container px-4 pt-5" id="icon-grid">
             <h2 class="pb-2 border-bottom">Qualifications</h2>
@@ -144,7 +197,7 @@
 
         <div class="container px-4" id="icon-grid">
             <h2 class="pb-2 border-bottom">Technical Skills</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 pt-5">
                 <div class="col d-flex align-items-start skills">
                     <img src="../assets/tech/excel.png" alt="Microsoft Excel" class="bi text-body-secondary flex-shrink-0 me-3"
                          width="50" height="50" aria-hidden="true">
@@ -306,10 +359,9 @@
                         <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">VBA Programming</h3>
                     </div>
                 </div>
-                <div class="col d-flex align-items-start skills"> <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em"
-                        height="1.75em" aria-hidden="true">
-                        <use xlink:href="#tools"></use>
-                    </svg>
+                <div class="col d-flex align-items-start skills">
+                    <img src="../assets/tech/ibm.png" alt="IBM" class="bi text-body-secondary flex-shrink-0 me-3"
+                         width="50" aria-hidden="true">
                     <div>
                         <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">IBM LSF Process Manager</h3>
                     </div>
@@ -369,7 +421,7 @@
 
         <div class="container px-4" id="icon-grid">
             <h2 class="pb-2 border-bottom">Domain and Functional Skills</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 pt-5">
                 <div class="col d-flex align-items-start skills"> <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em"
                         height="1.75em" aria-hidden="true">
                         <use xlink:href="#bootstrap"></use>
@@ -481,98 +533,72 @@
             </div>
         </div>
 
-        <div class="container px-4 pb-5" id="featured-3">
-            <h2 class="pb-2 border-bottom">History</h2>
-
-
-                <div class="list-group pt-5">
-                    <a class="list-group-item d-flex gap-3 py-3"
-                        aria-current="true"> <img src="../assets/emp/talan.svg" alt="" height="50" flex-shrink-0">
-                        <div class="d-flex gap-2 w-100 justify-content-between">
-                            <div>
-                                <h4 class="mb-0">Talan Data & AI UK</h4>
-                                <p class="mb-0 opacity-75">Senior Consultant</p>
-                            </div> <small class="opacity-100 text-nowrap">2018 - now</small>
-                        </div>
-                    </a>
-                    <a class="list-group-item d-flex gap-3 py-3"
-                        aria-current="true"> <img src="../assets/emp/sopra.png" alt="Sopra Steria" height="32" flex-shrink-0">
-                        <div class="d-flex gap-2 w-100 justify-content-between">
-                            <div>
-                                <h4 class="mb-0 opacity-50">Sopra Steria</h4>
-                                <p class="mb-0 opacity-25">Consultant</p>
-                            </div> <small class="opacity-50 text-nowrap">2014 - 2018</small>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-
         <div class="container px-4 pt-5" id="icon-grid">
             <h2 class="pb-2 border-bottom">Recent Assignments</h2>
                 <div class="container px-4 py-50">
-                    <div class="mt-5 p-5 text-center bg-body-tertiary rounded-3">
-                        <h2 class="text-body-emphasis">Retail Bank - Data & Analytics</h2>
-                        <h3 class="text-body-secondary mb-3">Data Analyst / Consultant</h3>
-                        <p class="lead">
-                            Working as part of an all consultant sub-team within Data & Analytics to deliver, within a timeframe of just three
-                            months, a tactical solution capable of meeting the institutions regulatory obligations for the HMT Breathing Space
-                            programme.
-                        </p>
-                        <p class="lead">
-                            This involved building out a series of SAS Enterprise Guide projects and gathering information for requests
-                            from high risk customers on all relevant product holdings including MTAs, Overdrafts and Credit Cards within core brands
-                            to identify accounts and pass details to Financial Health & Support to apply protections to customers and provide them
-                            appropriate windows of time to work with their financial advisors to come to suitable future financial arrangements.
-                        </p>
-                        <p class="lead">
-                            One of my key contributions was the Executioner aspect which handled process and case management, ensuring timely processing
-                            of customers within SLA and generating new files for FH&S to process daily.
-                        </p>
+                    <div class="mt-5 p-5 text-center bg-body-tertiary rounded-3 bg-primary-subtle">
+                        <div>
+                            <h2 class="text-body-emphasis">Retail Bank - Data & Analytics</h2>
+                            <h3 class="text-body-secondary mb-3">Data Analyst / Consultant</h3>
+                            <p class="lead">
+                                Working as part of an all consultant sub-team within Data & Analytics to deliver, within a timeframe of just three
+                                months, a tactical solution capable of meeting the institutions regulatory obligations for the HMT Breathing Space
+                                programme.
+                            </p>
+                            <p class="lead">
+                                This involved building out a series of SAS Enterprise Guide projects and gathering information for requests
+                                from high risk customers on all relevant product holdings including MTAs, Overdrafts and Credit Cards within core brands
+                                to identify accounts and pass details to Financial Health & Support to apply protections to customers and provide them
+                                appropriate windows of time to work with their financial advisors to come to suitable future financial arrangements.
+                            </p>
+                            <p class="lead">
+                                One of my key contributions was the Executioner aspect which handled process and case management, ensuring timely processing
+                                of customers within SLA and generating new files for FH&S to process daily.
+                            </p>
+                        </div>
+                        <div class="pt-5 badge-grid">
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/sas.png" alt="SAS Enterprise Guide">Enterprise Guide
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/sas.png" alt="SAS Studio">Studio
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/python.png" alt="Python">Python
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/tableau.png" alt="Tableau">Tableau
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/power-bi.png" alt="Power BI">Power BI
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-info-emphasis bg-info-subtle border border-info-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/snowflake.png" alt="Snowflake">
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/datagrip.png" alt="DataGrip">DataGrip
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/hadoop.png" alt="Hue">Hadoop / Hue
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/ms-sql-server.png" alt="Microsoft SQL Server">Microsoft SQL Server
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/teradata.png" alt="Teradata">Teradata
+                            </span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="pt-5 badge-grid">
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/sas.png" alt="SAS Enterprise Guide">Enterprise Guide
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/sas.png" alt="SAS Studio">Studio
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/python.png" alt="Python">Python
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/tableau.png" alt="Tableau">Tableau
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/power-bi.png" alt="Power BI">Power BI
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-info-emphasis bg-info-subtle border border-info-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/snowflake.png" alt="Snowflake">Snowflake
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/datagrip.png" alt="DataGrip">DataGrip
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/hadoop.png" alt="Hue">Hadoop / Hue
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/ms-sql-server.png" alt="Microsoft SQL Server">Microsoft SQL Server
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/teradata.png" alt="Teradata">Teradata
-                    </span>
                 </div>
 
                 <div class="container px-4" id="custom-cards">
@@ -639,37 +665,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="container px-4 py-50">
-                    <div class="mt-5 p-5 text-center bg-body-tertiary rounded-3">
-                        <h2 class="text-body-emphasis">Retail Bank - Data Migration / Separation</h2>
-                        <h3 class="text-body-secondary mb-3">Migration Consultant</h3>
-                        <p class="lead">
-                            Add summary...
-                        </p>
-                    </div>
-                </div>
 
-                <div class="pt-5 badge-grid">
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                        <img class="mx-1" height="24"src="../assets/tech/sas.png" alt="SAS Enterprise Guide">Enterprise Guide
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/sas.png" alt="SAS DI Studio">DI Studio
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/sas.png" alt="SAS Management Console">Management Console
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/unix.png" alt="UNIX">UNIX
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-info-emphasis bg-info-subtle border border-info-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/ibm.png" alt="IBM LSF Flow Manager">LSF Flow Manager
-                    </span>
+                <!-- Next Assignment -->
+
+                <div class="container px-4 py-50">
+                    <div class="mt-5 p-5 text-center bg-body-tertiary rounded-3 bg-primary-subtle">
+                        <div>
+                            <h2 class="text-body-emphasis">Retail Bank - Data Migration / Separation</h2>
+                            <h3 class="text-body-secondary mb-3">Migration Consultant</h3>
+                            <p class="lead">
+                                Add summary...
+                            </p>
+                        </div>
+                        <div class="pt-5 badge-grid">
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                <img class="mx-1" height="24"src="../assets/tech/sas.png" alt="SAS Enterprise Guide">Enterprise Guide
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/sas.png" alt="SAS DI Studio">DI Studio
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/sas.png" alt="SAS Management Console">Management Console
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/unix.png" alt="UNIX">
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-info-emphasis bg-info-subtle border border-info-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/ibm.png" alt="IBM">LSF Flow Manager
+                            </span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="container px-4" id="custom-cards">
@@ -740,28 +770,29 @@
                 <!-- Next Assignment -->
 
                 <div class="container px-4 py-50">
-                    <div class="mt-5 p-5 text-center bg-body-tertiary rounded-3">
-                        <h2 class="text-body-emphasis">Retail Bank - Change Management</h2>
-                        <h3 class="text-body-secondary mb-3">Incident Resolution Analyst</h3>
-                        <p class="lead">
-                            Add summary...
-                        </p>
+                    <div class="mt-5 p-5 text-center bg-body-tertiary rounded-3 bg-primary-subtle">
+                        <div>
+                            <h2 class="text-body-emphasis">Retail Bank - Change Management</h2>
+                            <h3 class="text-body-secondary mb-3">Incident Resolution Analyst</h3>
+                            <p class="lead">
+                                Add summary...
+                            </p>
+                        </div>
+                        <div class="pt-5 badge-grid">
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                <img class="mx-1" height="24"src="../assets/tech/sas.png" alt="SAS Enterprise Guide">Base
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                <img class="mx-1" height="24"src="../assets/tech/sas.png" alt="SAS Enterprise Guide">Enterprise Guide
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/sas.png" alt="SAS DI Studio">DI Studio
+                            </span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="pt-5 badge-grid">
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                        <img class="mx-1" height="24"src="../assets/tech/sas.png" alt="SAS Enterprise Guide">Base
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                        <img class="mx-1" height="24"src="../assets/tech/sas.png" alt="SAS Enterprise Guide">Enterprise Guide
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/sas.png" alt="SAS DI Studio">DI Studio
-                    </span>
                 </div>
 
                 <div class="container px-4" id="custom-cards">
@@ -792,20 +823,21 @@
                 <!-- Next Assignment -->
 
                 <div class="container px-4 py-50">
-                    <div class="mt-5 p-5 text-center bg-body-tertiary rounded-3">
-                        <h2 class="text-body-emphasis">Retail Bank - IRB/IFRS9</h2>
-                        <h3 class="text-body-secondary mb-3">Data Analyst</h3>
-                        <p class="lead">
-                            Add summary...
-                        </p>
+                    <div class="mt-5 p-5 text-center bg-body-tertiary rounded-3 bg-primary-subtle">
+                        <div>
+                            <h2 class="text-body-emphasis">Retail Bank - IRB/IFRS9</h2>
+                            <h3 class="text-body-secondary mb-3">Data Analyst</h3>
+                            <p class="lead">
+                                Add summary...
+                            </p>
+                        </div>
+                        <div class="pt-5 badge-grid">
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/sas.png" alt="SAS DI Studio">DI Studio
+                            </span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="pt-5 badge-grid">
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/sas.png" alt="SAS DI Studio">DI Studio
-                    </span>
                 </div>
 
                 <div class="container px-4" id="custom-cards">
@@ -836,24 +868,25 @@
                 <!-- Next Assignment -->
 
                 <div class="container px-4 py-50">
-                    <div class="mt-5 p-5 text-center bg-body-tertiary rounded-3">
-                        <h2 class="text-body-emphasis">Retail Bank - Data Quality</h2>
-                        <h3 class="text-body-secondary mb-3">Data Quality Analyst</h3>
-                        <p class="lead">
-                            Add summary...
-                        </p>
+                    <div class="mt-5 p-5 text-center bg-body-tertiary rounded-3 bg-primary-subtle">
+                        <div>
+                            <h2 class="text-body-emphasis">Retail Bank - Data Quality</h2>
+                            <h3 class="text-body-secondary mb-3">Data Quality Analyst</h3>
+                            <p class="lead">
+                                Add summary...
+                            </p>
+                        </div>
+                        <div class="pt-5 badge-grid">
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                <img class="mx-1" height="24"src="../assets/tech/sas.png" alt="SAS Dataflux">Dataflux
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/sas.png" alt="SAS DI Studio">DI Studio
+                            </span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="pt-5 badge-grid">
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                        <img class="mx-1" height="24"src="../assets/tech/sas.png" alt="SAS Dataflux">Dataflux
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/sas.png" alt="SAS DI Studio">DI Studio
-                    </span>
                 </div>
 
                 <div class="container px-4" id="custom-cards">
@@ -884,32 +917,33 @@
                 <!-- Next Assignment -->
 
                 <div class="container px-4 py-50">
-                    <div class="mt-5 p-5 text-center bg-body-tertiary rounded-3">
-                        <h2 class="text-body-emphasis">Retail Bank - Customer Advocates Office</h2>
-                        <h3 class="text-body-secondary mb-3">Data Insight Analyst</h3>
-                        <p class="lead">
-                            Add summary...
-                        </p>
+                    <div class="mt-5 p-5 text-center bg-body-tertiary rounded-3 bg-primary-subtle">
+                        <div>
+                            <h2 class="text-body-emphasis">Retail Bank - Customer Advocates Office</h2>
+                            <h3 class="text-body-secondary mb-3">Data Insight Analyst</h3>
+                            <p class="lead">
+                                Add summary...
+                            </p>
+                        </div>
+                        <div class="pt-5 badge-grid">
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/sas.png" alt="SAS Enterprise Guide">Enterprise Guide
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/vba.svg" alt="VBA">in Excel
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-info-emphasis bg-info-subtle border border-info-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/sap-bo.png" alt="SAP Business Objects">
+                            </span>
+                            <span
+                                class="badge d-flex align-items-center pt-1 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
+                                <img class="mx-1" height="24" src="../assets/tech/access.png" alt="Microsoft Access">Access
+                            </span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="pt-5 badge-grid">
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/sas.png" alt="SAS Enterprise Guide">Enterprise Guide
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/vba.svg" alt="VBA">in Excel
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-info-emphasis bg-info-subtle border border-info-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/sap-bo.png" alt="SAP Business Objects">
-                    </span>
-                    <span
-                        class="badge d-flex align-items-center pt-1 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
-                        <img class="mx-1" height="24" src="../assets/tech/access.png" alt="Microsoft Access">Access
-                    </span>
                 </div>
 
                 <div class="container px-4" id="custom-cards">
