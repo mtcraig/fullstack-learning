@@ -1,44 +1,114 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark"></html>
+<html lang="en" data-bs-theme="dark">
     <head>
         <meta charset="UTF-8">
-        <title>Michael Craig - Portfolio</title>
+        <title>Michael Craig - Home</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-   </head>
+        <style>
+            body {
+                margin-top: 4rem;
+            }
+        </style>
+    </head>
     <body>
+
+        <section id="Navigation">
+
+            <nav id="topnav" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <div>
+                    <a href="../index.html"
+                    class="d-flex align-items-center px-3 me-md-auto link-body-emphasis text-decoration-none">
+                        <img src="../assets/me.jpg" alt="Michael Craig" class="rounded-circle me-2 border border-3 border-primary" width="75" height="75">
+                        <span class="fs-4 px-3"><h1>Michael Craig</h1></span>
+                    </a>
+                </div>
+                <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-pills ms-auto mx-3">
+                        <li class="nav-item">
+                            <a class="nav-link px-3" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="../pages/about.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="../pages/resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-3 dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Portfolio
+                            </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../pages/portfolio.html">Overview</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Portfolio Item #1</a></li>
+                            <li><a class="dropdown-item" href="#">Portfolio Item #2</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Portfolio Item #3</a></li>
+                            <li><a class="dropdown-item" href="#">Portfolio Item #4</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="../pages/getintouch.html">Get in Touch</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
+            
+        </section>
         
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="../index.html"
-               class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-               <img src="../assets/me.jpg" alt="Michael Craig" class="rounded-circle me-2" width="50" height="50">
-               <span class="fs-4"><h1>Michael Craig</h1></span>
-            </a>
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="../pages/about.html" class="nav-link">About Me</a></li>
-                <li class="nav-item"><a href="../pages/resume.html" class="nav-link">Resume</a></li>
-                <li class="nav-item"><a href="../pages/portfolio.html" class="nav-link active" aria-current="page">Portfolio</a></li>
-                <li class="nav-item"><a href="../pages/getintouch.html" class="nav-link">Get in Touch</a></li>
-            </ul>
-        </header>
+
+
 
     </body>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center"> <a href="/"
-                class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> <svg
-                    class="bi" width="30" height="24" aria-hidden="true">
-                    <use xlink:href="#bootstrap"></use>
-                </svg> </a> <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Company, Inc</span> </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><svg class="bi" width="24"
-                        height="24" aria-hidden="true">
-                        <use xlink:href="#instagram"></use>
-                    </svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><svg class="bi" width="24"
-                        height="24">
-                        <use xlink:href="#facebook"></use>
-                    </svg></a></li>
-        </ul>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <section id="Footer">
+
+        <footer id="footbar" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center"> <a href="/"
+                    class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> <svg
+                        class="bi" width="30" height="24" aria-hidden="true">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg> </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© Michael Craig</br>Icons courtesy of: <a href="credly.com">Credly</a>, <a href="icons8.com">Icons8</a>, <a href="pngwing.com">PNGWing</a>, and <a href="pngegg.com">PNGEgg</a></span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><svg class="bi" width="24"
+                            height="24" aria-hidden="true">
+                            <use xlink:href="#instagram"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><svg class="bi" width="24"
+                            height="24">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a></li>
+            </ul>
+        </footer>
+
+    </section>
+
+    <section id="Scripts">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener('click', function(event) {
+            var navbarCollapse = document.getElementById('navbarSupportedContent');
+            var isOpen = navbarCollapse.classList.contains('show');
+            var toggler = document.querySelector('.navbar-toggler');
+            // If open and click is outside the navbar and toggler
+            if (
+                isOpen &&
+                !navbarCollapse.contains(event.target) &&
+                !toggler.contains(event.target)
+            ) {
+                toggler.click();
+            }
+            });
+        </script>
+
+    </section>
+    
 </html>
