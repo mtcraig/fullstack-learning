@@ -38,6 +38,25 @@
             .container {
                 max-width: 1200px;
             }
+            .card-cover {
+                position: relative;
+                overflow: hidden;
+            }
+            .card-cover .card-bg {
+                position: absolute;
+                inset: 0;
+                background-size: cover;
+                background-position: center;
+                z-index: 1;
+                transition: filter 0.3s;
+            }
+            .card-cover:hover .card-bg {
+                filter: blur(6px);
+            }
+            .card-cover > .d-flex {
+                position: relative;
+                z-index: 2;
+            }
         </style>
     </head>
     <body>
@@ -143,6 +162,7 @@
 
             <div class="container px-4 pt-4" id="icon-grid">
                 <h2 class="pb-2 border-bottom">Qualifications</h2>
+                <div class="card px-2 mt-4 rounded-3 bg-secondary-subtle">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-4">
                     <div class="col d-flex align-items-start qual-item">
                         <img src="../assets/quals/sas-cp.png" alt="SAS Certified Professional" class="bi text-body-secondary flex-shrink-0 me-3"
@@ -208,6 +228,7 @@
                             <p>First w/ Honours</p>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
 
@@ -514,98 +535,98 @@
                 <div class="container px-2">
                     <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-4">
                         <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                                style="background-image: url('unsplash-photo-1.jpg');">
-                                <div class="d-flex flex-column h-100 p-2 text-white text-shadow-1">
-                                    <h3 class="p-4 display-8 lh-1 fw-light">Data Migration</h3>
+                            <div class="card card-cover h-100 overflow-hidden rounded-3 position-relative">
+                                <div class="card-bg" style="background-image: url('../assets/stock/markus-spiske-hvSr_CVecVI-unsplash.jpg');"></div>
+                                <div class="d-flex flex-column h-100 p-2 position-relative">
+                                    <h3 class="p-4 display-9 lh-1 text-white fw-light">Data Migration</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                                style="background-image: url('unsplash-photo-2.jpg');">
-                                <div class="d-flex flex-column h-100 p-2 text-white text-shadow-1">
-                                    <h3 class="p-4 display-8 lh-1 fw-light">MI Reporting & Dashboards</h3>
+                            <div class="card card-cover h-100 overflow-hidden rounded-3 position-relative">
+                                <div class="card-bg" style="background-image: url('../assets/stock/markus-spiske-hvSr_CVecVI-unsplash.jpg');"></div>
+                                <div class="d-flex flex-column h-100 p-2 position-relative">
+                                    <h3 class="p-4 display-9 lh-1 text-white fw-light">MI Reporting & Dashboards</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                                style="background-image: url('unsplash-photo-3.jpg');">
-                                <div class="d-flex flex-column h-100 p-2 text-shadow-1">
-                                    <h3 class="p-4 display-8 lh-1 fw-light">Development</h3>
+                            <div class="card card-cover h-100 overflow-hidden rounded-3 position-relative">
+                                <div class="card-bg" style="background-image: url('../assets/stock/markus-spiske-hvSr_CVecVI-unsplash.jpg');"></div>
+                                <div class="d-flex flex-column h-100 p-2 position-relative">
+                                    <h3 class="p-4 display-9 lh-1 text-white fw-light">Development</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                                style="background-image: url('unsplash-photo-3.jpg');">
-                                <div class="d-flex flex-column h-100 p-2 text-shadow-1">
-                                    <h3 class="p-4 display-8 lh-1 fw-light">Solution Design</h3>
+                            <div class="card card-cover h-100 overflow-hidden rounded-3 position-relative">
+                                <div class="card-bg" style="background-image: url('../assets/stock/markus-spiske-hvSr_CVecVI-unsplash.jpg');"></div>
+                                <div class="d-flex flex-column h-100 p-2 position-relative">
+                                    <h3 class="p-4 display-9 lh-1 text-white fw-light">Solution Design</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                                style="background-image: url('unsplash-photo-1.jpg');">
-                                <div class="d-flex flex-column h-100 p-2 text-white text-shadow-1">
-                                    <h3 class="p-4 display-8 lh-1 fw-light">Regulatory Reporting</h3>
+                            <div class="card card-cover h-100 overflow-hidden rounded-3 position-relative">
+                                <div class="card-bg" style="background-image: url('../assets/stock/markus-spiske-hvSr_CVecVI-unsplash.jpg');"></div>
+                                <div class="d-flex flex-column h-100 p-2 position-relative">
+                                    <h3 class="p-4 display-9 lh-1 text-white fw-light">Regulatory Reporting</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                                style="background-image: url('unsplash-photo-2.jpg');">
-                                <div class="d-flex flex-column h-100 p-2 text-white text-shadow-1">
-                                    <h3 class="p-4 display-8 lh-1 fw-light">Data Analysis</h3>
+                            <div class="card card-cover h-100 overflow-hidden rounded-3 position-relative">
+                                <div class="card-bg" style="background-image: url('../assets/stock/markus-spiske-hvSr_CVecVI-unsplash.jpg');"></div>
+                                <div class="d-flex flex-column h-100 p-2 position-relative">
+                                    <h3 class="p-4 display-9 lh-1 text-white fw-light">Data Analysis</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                                style="background-image: url('unsplash-photo-2.jpg');">
-                                <div class="d-flex flex-column h-100 p-2 text-white text-shadow-1">
-                                    <h3 class="p-4 display-8 lh-1 fw-light">Data Visualisation</h3>
+                            <div class="card card-cover h-100 overflow-hidden rounded-3 position-relative">
+                                <div class="card-bg" style="background-image: url('../assets/stock/markus-spiske-hvSr_CVecVI-unsplash.jpg');"></div>
+                                <div class="d-flex flex-column h-100 p-2 position-relative">
+                                    <h3 class="p-4 display-9 lh-1 text-white fw-light">Data Visualisation</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                                style="background-image: url('unsplash-photo-3.jpg');">
-                                <div class="d-flex flex-column h-100 p-2 text-shadow-1">
-                                    <h3 class="p-4 display-8 lh-1 fw-light">Customer Insight</h3>
+                            <div class="card card-cover h-100 overflow-hidden rounded-3 position-relative">
+                                <div class="card-bg" style="background-image: url('../assets/stock/markus-spiske-hvSr_CVecVI-unsplash.jpg');"></div>
+                                <div class="d-flex flex-column h-100 p-2 position-relative">
+                                    <h3 class="p-4 display-9 lh-1 text-white fw-light">Customer Insight</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                                style="background-image: url('unsplash-photo-3.jpg');">
-                                <div class="d-flex flex-column h-100 p-2 text-shadow-1">
-                                    <h3 class="p-4 display-8 lh-1 fw-light">Marketing & Customer Communications</h3>
+                            <div class="card card-cover h-100 overflow-hidden rounded-3 position-relative">
+                                <div class="card-bg" style="background-image: url('../assets/stock/markus-spiske-hvSr_CVecVI-unsplash.jpg');"></div>
+                                <div class="d-flex flex-column h-100 p-2 position-relative">
+                                    <h3 class="p-4 display-9 lh-1 text-white fw-light">Marketing & Customer Communications</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                                style="background-image: url('unsplash-photo-1.jpg');">
-                                <div class="d-flex flex-column h-100 p-2 text-white text-shadow-1">
-                                    <h3 class="p-4 display-8 lh-1 fw-light">Credit Cards</h3>
+                            <div class="card card-cover h-100 overflow-hidden rounded-3 position-relative">
+                                <div class="card-bg" style="background-image: url('../assets/stock/markus-spiske-hvSr_CVecVI-unsplash.jpg');"></div>
+                                <div class="d-flex flex-column h-100 p-2 position-relative">
+                                    <h3 class="p-4 display-9 lh-1 text-white fw-light">Credit Cards</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                                style="background-image: url('unsplash-photo-3.jpg');">
-                                <div class="d-flex flex-column h-100 p-2 text-shadow-1">
-                                    <h3 class="p-4 display-8 lh-1 fw-light">Overdrafts</h3>
+                            <div class="card card-cover h-100 overflow-hidden rounded-3 position-relative">
+                                <div class="card-bg" style="background-image: url('../assets/stock/markus-spiske-hvSr_CVecVI-unsplash.jpg');"></div>
+                                <div class="d-flex flex-column h-100 p-2 position-relative">
+                                    <h3 class="p-4 display-9 lh-1 text-white fw-light">Overdrafts</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                                style="background-image: url('unsplash-photo-2.jpg');">
-                                <div class="d-flex flex-column h-100 p-2 text-white text-shadow-1">
-                                    <h3 class="p-4 display-8 lh-1 fw-light">Remediation</h3>
+                            <div class="card card-cover h-100 overflow-hidden rounded-3 position-relative">
+                                <div class="card-bg" style="background-image: url('../assets/stock/markus-spiske-hvSr_CVecVI-unsplash.jpg');"></div>
+                                <div class="d-flex flex-column h-100 p-2 position-relative">
+                                    <h3 class="p-4 display-9 lh-1 text-white fw-light">Remediation</h3>
                                 </div>
                             </div>
                         </div>
@@ -1040,7 +1061,10 @@
                                 </span>
                             </div>
                             <p class="lead">
-                                Add summary...
+                                I was brought into this role to spearhead a first attempt at setting up snapshot level Data Quality checks within the bank to flag issues and diagnose data 'health' in the warehouse. 
+                            </p>
+                            <p class="lead">
+                                In many cases this involved devising new standards for many fields and working with stakeholders to define acceptable thresholds.
                             </p>
                         </div>
                         <div class="py-4 badge-grid">
@@ -1117,7 +1141,16 @@
                                 </span>
                             </div>
                             <p class="lead">
-                                Add summary...
+                                My primary role was to support and help in automating the processing of Payment Protection Insurance (PPI) remediation payments based on often incomplete statement periods, requiring modelling and compound interest calculation of payments due.
+                            </p>
+                            <p class="lead">
+                                Over time this role evolved into supporting additional remediation projects such as the Plevin review where prior redress was reassessed, and into automation of all MI team regular processes into a custom-built batch scheduler system.
+                            </p>
+                            <p class="lead">
+                                One major project involved building up from scratch a request handler system to manage the thousands of PPI requests received weekly from both customers and claims companies, integrating with existing fully and partially automated tools for account identification and redress estimation from often minimal customer information.
+                            </p>
+                            <p class="lead">
+                                I also conducted the first deep dive into PPI done within the bank which was shown to Exec level stakeholders to try to identify any criteria that could be used to pre-emptively identify future PPI claimants.
                             </p>
                         </div>
 
