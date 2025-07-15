@@ -2,11 +2,38 @@
 <html lang="en" data-bs-theme="dark">
     <head>
         <meta charset="UTF-8">
-        <title>Michael Craig - Home</title>
+        <title>Michael Craig - Get in Touch</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
         <style>
             body {
                 margin-top: 4rem;
+            }
+            .card-cover {
+                position: relative;
+                overflow: hidden;
+                min-height: 200px;
+            }
+            /* .card-bg {
+                filter: blur(1px);
+            } */
+            .card-cover .card-bg {
+                position: absolute;
+                inset: 0;
+                background-size: cover;
+                background-position: center;
+                z-index: 1;
+                transition: filter 0.3s;
+            }
+            .card-cover:hover .card-bg {
+                filter: blur(6px);
+            }
+            .card-cover > .d-flex {
+                position: relative;
+                z-index: 2;
+            }
+            .social-link {
+                color: inherit;
+                text-decoration: none;
             }
         </style>
     </head>
@@ -60,9 +87,38 @@
             </nav>
             
         </section>
+
+        <section id="Socials">
+
+            <div class="container px-4 pt-5" id="icon-grid">
+                <h2 class="pb-2 border-bottom">My Socials</h2>
+                <div class="container px-2">
+                    <div class="row row-cols-2 align-items-stretch g-4 py-4">
+                        <div class="col">
+                            <a class="social-link" href="https://www.linkedin.com/in/michael-craig-506b1061/">
+                                <div class="card card-cover h-100 overflow-hidden rounded-3 position-relative">
+                                    <div class="card-bg" style="background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0)), url('../assets/social/linkedin.jpg');"></div>
+                                    <div class="d-flex flex-column h-100 justify-content-center p-2 position-relative">
+                                        <h3 class="p-4 display-5 lh-1 text-white fw-light">LinkedIn</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="social-link" href="https://www.instagram.com/m.t.craig/">
+                                <div class="card card-cover h-100 overflow-hidden rounded-3 position-relative">
+                                    <div class="card-bg" style="background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0)), url('../assets/social/instagram.jpg');"></div>
+                                    <div class="d-flex flex-column h-100 justify-content-center p-2 position-relative">
+                                        <h3 class="p-4 display-5 lh-1 text-white fw-light">Instagram</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         
-
-
+        </section>
 
     </body>
 
