@@ -1,0 +1,1 @@
+console.log("hello i'm a node script wheeeeee")
