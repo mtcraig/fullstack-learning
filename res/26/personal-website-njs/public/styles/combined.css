@@ -1,0 +1,114 @@
+/* All */
+
+body {
+    margin-top: 5rem;
+}
+.container {
+    max-width: 1200px;
+}
+#homeContainer {
+    max-width: 95%;
+}
+
+/* Index */
+
+.carousel-image{
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    filter: invert(1);
+}
+
+/* About */
+
+.top-tile {
+    text-align: center;
+}
+.feat-bg {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Resume */
+
+.skills {
+    height: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* background-color: darkslategray; */
+    /* border-radius: 2rem; */
+    align-items: center !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+}
+.qual-item {
+    height: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* background-color: darkslategray; */
+    /* border-radius: 2rem; */
+    align-items: center !important;
+}
+.badge-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+#currRole {
+    font-size: 2rem;
+}
+.card-cover {
+    position: relative;
+    overflow: hidden;
+}
+.card-cover .card-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transition: filter 0.3s;
+}
+.card-cover:hover .card-bg {
+    filter: blur(6px);
+}
+.card-cover > .d-flex {
+    position: relative;
+    z-index: 2;
+}
+
+/* Portfolio */
+
+/* Contact */
+
+#cont-linkedin, #cont-instagram {
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+}
+/* .card-bg {
+    filter: blur(1px);
+} */
+#cont-linkedin .card-bg, #cont-instagram .card-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transition: filter 0.3s;
+}
+#cont-linkedin:hover .card-bg, #cont-instagram:hover .card-bg {
+    filter: blur(6px);
+}
+#cont-linkedin > .d-flex, #cont-instagram > .d-flex {
+    position: relative;
+    z-index: 2;
+}
+.social-link {
+    color: inherit;
+    text-decoration: none;
+}

@@ -1,0 +1,59 @@
+<%- include('partials/header.ejs') %>
+        
+        <div id="homeContainer" class="container pt-5">
+            <div id="myCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0"
+                            class="active" aria-label="Slide 1" aria-current="true">
+                    </button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2" class="">
+                    </button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3" class="">
+                    </button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="bd-placeholder-img carousel-image" src="assets/stock/me-ottawa.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+                        <div class="container">
+                            <div class="carousel-caption text-start text-light">
+                                <h2>Experienced Senior Consultant</h2>
+                                <p class="opacity-75">
+                                    Over 10 years of experience delivering data driven solutions in financial services
+                                </p>
+                                <p><a class="btn btn-lg btn-primary" href="resume.html">See my resume</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="bd-placeholder-img carousel-image" src="assets/stock/markus-spiske-hvSr_CVecVI-unsplash.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+                        <div class="container">
+                            <div class="carousel-caption text-light">
+                                <h2>Diverse expertise</h2
+                                <p>A portfolio covering everything from front-end to back-end</p>
+                                <p><a class="btn btn-lg btn-primary" href="portfolio.html">See my portfolio</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="bd-placeholder-img carousel-image" src="assets/stock/me-montreal.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+                        <div class="container">
+                            <div class="carousel-caption text-end text-light">
+                                <h2>Varied interests</h2>
+                                <p>There's more to me than data</p>
+                                <p><a class="btn btn-lg btn-primary" href="about.html">Learn more about me</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev"> <span
+                        class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span>
+                </button> <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+    </body>
+
+<%- include('partials/footer.ejs') %>

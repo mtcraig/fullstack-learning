@@ -1,0 +1,18 @@
+{
+    "roles": [
+        {
+            "company": "Talan Data & AI UK",
+            "logo": null,
+            "role": "Senior Consultant",
+            "start": 2018,
+            "end": null
+        },
+        {
+            "company": "Sopra Steria",
+            "logo": null,
+            "role": "Consultant",
+            "start": 2014,
+            "end": 2018
+        }
+    ]
+}

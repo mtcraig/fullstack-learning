@@ -1,0 +1,146 @@
+{
+    "SAS Specialist": [
+        {
+            "badge": "assets/tech/sas.png",
+            "tech": "Base"
+        },
+        {
+            "badge": "assets/tech/sas.png",
+            "tech": "Enterprise Guide"
+        },
+        {
+            "badge": "assets/tech/sas.png",
+            "tech": "Data Integration Studio"
+        },
+        {
+            "badge": "assets/tech/sas.png",
+            "tech": "Studio"
+        },
+        {
+            "badge": "assets/tech/sas.png",
+            "tech": "DataFlux"
+        },
+        {
+            "badge": "assets/tech/sas.png",
+            "tech": "Management Console"
+        }
+    ],
+    "Other Coding Languages": [
+        {
+            "badge": "assets/tech/sas.png",
+            "tech": "SAS 9.4"
+        },
+        {
+            "badge": "assets/tech/sql.png",
+            "tech": "SQL"
+        },
+        {
+            "badge": "assets/tech/python.png",
+            "tech": "Python"
+        },
+        {
+            "badge": "assets/tech/unix.png",
+            "tech": "Unix"
+        },
+        {
+            "badge": "assets/tech/vba.svg",
+            "tech": "VBA"
+        },
+        {
+            "badge": "assets/tech/html.png",
+            "tech": "HTML"
+        },
+        {
+            "badge": "assets/tech/bootstrap.png",
+            "tech": "Bootstrap"
+        },
+        {
+            "badge": "assets/tech/ibm.png",
+            "tech": "IBM LSF Process Manager"
+        }
+    ],
+    "Databases and Platforms": [
+        {
+            "badge": "assets/tech/teradata.png",
+            "tech": "Teradata"
+        },
+        {
+            "badge": "assets/tech/hadoop.png",
+            "tech": "Hadoop"
+        },
+        {
+            "badge": "assets/tech/access.png",
+            "tech": "Microsoft Access"
+        },
+        {
+            "badge": "assets/tech/ms-sql-server.png",
+            "tech": "Microsoft SQL Server"
+        },
+        {
+            "badge": "assets/tech/snowflake.png",
+            "tech": "Snowflake"
+        },
+        {
+            "badge": "assets/tech/hue.png",
+            "tech": "Hue"
+        }
+    ],
+    "Visualisation and Dashboards": [
+        {
+            "badge": "assets/tech/power-bi.png",
+            "tech": "Microsoft Power BI"
+        },
+        {
+            "badge": "assets/tech/tableau.png",
+            "tech": "Tableau"
+        },
+        {
+            "badge": "assets/tech/sap-bo.png",
+            "tech": "SAP Business Objects"
+        }
+    ],
+    "Development Tools": [
+        {
+            "badge": "assets/tech/github.png",
+            "tech": "GitHub"
+        },
+        {
+            "badge": "assets/tech/jira.png",
+            "tech": "Jira"
+        },
+        {
+            "badge": "assets/tech/gitlab.png",
+            "tech": "GitLab"
+        },
+        {
+            "badge": "assets/tech/datagrap.png",
+            "tech": "DataGrip"
+        },
+        {
+            "badge": "assets/tech/jupyter.png",
+            "tech": "Jupyter Notebook"
+        },
+        {
+            "badge": "assets/tech/confluence.png",
+            "tech": "Confluence"
+        },
+        {
+            "badge": "assets/tech/bitbucket.png",
+            "tech": "BitBucket"
+        },
+        {
+            "badge": "assets/tech/vscode.png",
+            "tech": "Visual Studio Code"
+        }
+    ],
+    "Office": [
+        {
+            "badge": "assets/tech/excel.png",
+            "tech": "Microsoft Excel"
+        },
+        {
+            "badge": "assets/tech/office.png",
+            "tech": "Microsoft Office"
+        }
+    ]
+}

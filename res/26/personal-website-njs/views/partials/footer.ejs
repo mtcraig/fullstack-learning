@@ -1,0 +1,47 @@
+
+    <section id="Footer">
+
+        <footer id="footbar" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center"> <a href="/"
+                    class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> <svg
+                        class="bi" width="30" height="24" aria-hidden="true">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg> </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© Michael Craig</br>Stock image courtesy of: <a href="https://unsplash.com/@markusspiske?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Markus Spiske</a></span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><svg class="bi" width="24"
+                            height="24" aria-hidden="true">
+                            <use xlink:href="#instagram"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><svg class="bi" width="24"
+                            height="24">
+                            <use xlink:href="#facebook"></use>
+                        </svg></a></li>
+            </ul>
+        </footer>
+
+    </section>
+
+    <section id="Scripts">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener('click', function(event) {
+            var navbarCollapse = document.getElementById('navbarSupportedContent');
+            var isOpen = navbarCollapse.classList.contains('show');
+            var toggler = document.querySelector('.navbar-toggler');
+            // If open and click is outside the navbar and toggler
+            if (
+                isOpen &&
+                !navbarCollapse.contains(event.target) &&
+                !toggler.contains(event.target)
+            ) {
+                toggler.click();
+            }
+            });
+        </script>
+
+    </section>
+    
+</html>

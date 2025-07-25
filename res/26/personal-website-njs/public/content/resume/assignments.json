@@ -1,0 +1,266 @@
+{
+    "Assignments": [
+        {
+            "client": "Retail Bank - Data & Analytics",
+            "role": "Data Analyst / Consultant",
+            "domain-tags": [
+                "HMT Breathing Space",
+                "Cost of Living",
+                "Overdrafts",
+                "Credit Cards",
+                "Solution Design",
+                "Dashboards",
+                "Regulatory Reporting"
+            ],
+            "summary": [
+                "Working as part of an all consultant sub-team within Data & Analytics to deliver, within a timeframe of just three months, a tactical solution capable of meeting the institutions regulatory obligations for the HMT Breathing Space programme.",
+                "This involved building out a series of SAS Enterprise Guide projects and gathering information for requests from high risk customers on all relevant product holdings including MTAs, Overdrafts and Credit Cards within core brands to identify accounts and pass details to Financial Health & Support to apply protections to customers and provide them appropriate windows of time to work with their financial advisors to come to suitable future financial arrangements.",
+                "One of my key contributions was the Executioner aspect which handled process and case management, ensuring timely processing of customers within SLA and generating new files for FH&S to process daily."
+            ],
+            "tech-tags": [
+                {
+                    "badge": "assets/tech/sas.png",
+                    "tech": "Enterprise Guide",
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/sas.png",
+                    "tech": "Studio",
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/python.png",
+                    "tech": "Python",
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/tableau.png",
+                    "tech": "Tableau",
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/power-bi.png",
+                    "tech": "Power BI",
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/snowflake.png",
+                    "tech": "Snowflake",
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/datagrip.png",
+                    "tech": "DataGrip",
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/hadoop.png",
+                    "tech": "Hadoop / Hue",
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/ms-sql-server.png",
+                    "tech": "Microsoft SQL Server",
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/teradata.png",
+                    "tech": "Teradata",
+                    "style": null
+                }
+            ],
+            "highlights": [
+                "Developing approaches across Teradata and Snowflake SQL to aid in delivering Cost of Living support to vulnerable customers and using visualisation platforms such as Power BI to deliver a number of deep dives to key management stakeholders to improve decision making around targeted customer support, along with additional analysis and dashboarding for longer term metric tracking of key populations and assessing programme successes against desired outcomes.",
+                "Addressing the need to implement an ongoing review strategy of Overdraft limits based on customer affordability, working with Unsecured Lending to deliver a tactical solution for applying semi-automated Overdraft Limit Reductions, using SAS Studio, Snowflake and Teradata to derive cohorts based on ability to reduce the limits, calculate new limits and engage with customers where possible.",
+                "My role involved completion of development, ongoing running and process maintenance as requirements were refined between the process MVP and the succeeding Strategic solution, deliver updating cohorts weekly to reduce Overdraft limits in a risk managed rollout across the customer base, including multiple Pilots and a phased MVP solution.",
+                "Development of dashboards in Power BI to track pilot outcomes for the Limit reductions work to provide insights into managing risk for future pilots and project phases, such as the long-term Strategic rollout.",
+                "Tableau dashboard support to ensure continued compliance in regulatory reporting following a re-platforming of the customer alerts system to Snowflake.",
+                "Ongoing development and maintenance of the HMT Breathing Space process in SAS EG to support evolving operational requirements, including implementation of a move from an email led data ingestion process to an API driven one, and making procedural changes to support the needs of downstream teams until such time as the Strategic process could take over - a period that was originally intended to last c. 6 months but ended up lasting over 12 months.",
+                "Delivered demonstrations to the client team on practices to aid adoption of Git into the regular workflow, and optimisations to best make use of the tools offered in GitLab to aid reviews, issue tracking, development goals, and release candidates of project code."
+            ]
+        },
+        {
+            "client": "Retail Bank - Data Migration / Separation",
+            "role": "Migration Consultant",
+            "domain-tags": [
+                "Data Migration",
+                "Code Refactoring",
+                "ETL",
+                "Platform Administration",
+                "Reverse Engineering",
+                "Project Management"
+            ],
+            "summary": [
+                ""
+            ],
+            "tech-tags": [
+                {
+                    "badge": "assets/tech/sas.png",
+                    "tech": "Enterprise Guide",
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/sas.png",
+                    "tech": "Studio",
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/sas.png",
+                    "tech": "Management Console",
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/unix.png",
+                    "tech": null,
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/ibm.png",
+                    "tech": "LSF Flow Manager",
+                    "style": null
+                }
+            ],
+            "highlights": [
+                "End to end redevelopment of processes to migrate off a DB2 platform to a new SAS platform to sever connection to a prior client subsiduary and ensure regulatory compliance post-separation.",
+                "Built and updated of SAS DI flows using SAS Management Console and Flow Manager, and the creation of a full process schedule for a key business area, requiring full requirements gathering with senior stakeholders and subject matter experts, high-level and low-level design documentation and both Unit and User Acceptance Testing.",
+                "Design and build of processes importing sensitive data from IBM Mainframe to SAS, reverse engineering from limited original documentation of a COBOL implementation to ensure that data post ETL in the new process exactly matched or to within accepted tolerances and minimise downstream data impacts across the business.",
+                "Led the remediation of a series of bank processes to ensure connections operated performantly on the target environment whilst adhering strictly to both client and BDP coding standards.",
+                "Investigation and resolution of DB2 table issues in the target environments, and aided in managing the data and the grid environment using UNIX and SAS Management Console to control security and job promotions when implementing new migrated processes.",
+                "Involved in reconciliation efforts as part of pre-handover parallel running in order to identify defects and ensure processes aligned with the source environment such that the client could expect as close to a seamless transition to the new platform as possible."
+            ]
+        },
+        {
+            "client": "Retail Bank - Change Management",
+            "role": "Incident Resolution Analyst",
+            "domain-tags": [
+                "Process Debugging",
+                "Data Quality",
+                "Process Design",
+                "Agile",
+                "Kanban"
+            ],
+            "summary": [
+                ""
+            ],
+            "tech-tags": [
+                {
+                    "badge": "assets/tech/sas.png",
+                    "tech": "Base",
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/sas.png",
+                    "tech": "Enterprise Guide",
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/sas.png",
+                    "tech": "DI Studio",
+                    "style": null
+                }
+            ],
+            "highlights": [
+                "Analysis of production batch SAS processes and data in response to incidents and queries raised by end users, and developing technical solutions in Base SAS and SAS Data Integration Studio, including creation of implementation and testing plans.",
+                "Agile incident resolution in monthly sprints via Jira tickets and Kanban boards, including walkthroughs of analysis findings and solutions with both technical and non-technical stakeholders prior to solution sign-off."
+            ]
+        },
+        {
+            "client": "Retail Bank - IRB / IFRS9",
+            "role": "Data Analyst",
+            "domain-tags": [
+                "ETL",
+                "Process Refactoring"
+            ],
+            "summary": [
+                ""
+            ],
+            "tech-tags": [
+                {
+                    "badge": "assets/tech/sas.png",
+                    "tech": "DI Studio",
+                    "style": null
+                }
+            ],
+            "highlights": [
+                "Investigatory work into existing SAS regulatory data processing primarily in SAS Data Integration Studio; creation of process documentation for risk and impact assessment.",
+                "Proposal and recommendation of process modifications including logic and ETL required to meet updated process requirements for IRB and IFRS9."
+            ]
+        },
+        {
+            "client": "Retail Bank - Data Quality",
+            "role": "Data Quality Analyst",
+            "domain-tags": [
+                "Data Quality"
+            ],
+            "summary": [
+                "I was brought into this role to spearhead a first attempt at setting up snapshot level Data Quality checks within the bank to flag issues and diagnose data 'health' in the warehouse.",
+                "In many cases this involved devising new standards for many fields and working with stakeholders to define acceptable thresholds."
+            ],
+            "tech-tags": [
+                {
+                    "badge": "assets/tech/sas.png",
+                    "tech": "DataFlux",
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/sas.png",
+                    "tech": "DI Studio",
+                    "style": null
+                }
+            ],
+            "highlights": [
+                "Created SAS Data Integration Studio jobs to migrate data between storage locations and enable application of data governance rules through SAS Dataflux utilising business rules generated through stakeholder engagement and designing of regular expressions to triage data quality exceptions.",
+                "Assessment of data validity and integrity to support client data quality initiatives and drive intra-business data engagement."
+            ]
+        },
+        {
+            "client": "Retail Bank - Customer Advocates Office",
+            "role": "Data Insight Analyst",
+            "domain-tags": [
+                "Remediation",
+                "Product Deep Dives",
+                "Dashboards",
+                "Process Design",
+                "Process Automation",
+                "Request Handling",
+                "Regulatory Reporting"
+            ],
+            "summary": [
+                "My primary role was to support and help in automating the processing of Payment Protection Insurance (PPI) remediation payments based on often incomplete statement periods, requiring modelling and compound interest calculation of payments due.",
+                "Over time this role evolved into supporting additional remediation projects such as the Plevin review where prior redress was reassessed, and into automation of all MI team regular processes into a custom-built batch scheduler system.",
+                "One major project involved building up from scratch a request handler system to manage the thousands of PPI requests received weekly from both customers and claims companies, integrating with existing fully and partially automated tools for account identification and redress estimation from often minimal customer information.",
+                "I also conducted the first deep dive into PPI done within the bank which was shown to Exec level stakeholders to try to identify any criteria that could be used to pre-emptively identify future PPI claimants."
+            ],
+            "tech-tags": [
+                {
+                    "badge": "assets/tech/sas.png",
+                    "tech": "Enterprise Guide",
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/vba.svg",
+                    "tech": "DI Studio",
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/sap-bo.png",
+                    "tech": null,
+                    "style": null
+                },
+                {
+                    "badge": "assets/tech/access.png",
+                    "tech": "Access",
+                    "style": null
+                }
+            ],
+            "highlights": [
+                "Data analyst in the Customer Advocates Office tasked with continual development in SAS and MS Excel to create and optimise automated solutions for reporting and key business as usual processes.",
+                "SAS Development lead on a series of major PPI remediation projects across multiple products, helping to deliver redress payments to over 100,000 impacted customers, including revisiting customers for additional repayments plus interest following the Plevin decisions.",
+                "Engaged with senior executive stakeholders to present results of extensive deep-dive analysis into PPI sales and complaints data, and developed an automated request handler and associated MI dashboards to enable fast, high-volume responses to enquiries from both customers and claims companies around PPI mis-selling, handling thousands of enquiries per week.",
+                "Migrated existing reporting from SAP Business Objects to SAS, including SQL to SAS translation / build, Unit and UA Testing, implementation, data quality validation and documentation.",
+                "Ad-hoc reporting and data quality investigation using SAP Business Objects and SAS, as well as performing ad-hoc actions relating to fulfilling regulatory PPI sales and complaints reporting commitments.",
+                "Internal peer review of code prior to production release, as well as the continual updating and validation of process documentation in line with client standards."
+            ]
+        }
+    ]
+}
