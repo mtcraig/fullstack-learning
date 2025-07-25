@@ -38,8 +38,8 @@ app.get('/resume', (req, res) => {
     var dataHist = readJSON('history');
     var dataQual = readJSON('qualifications')['qualifications'];
     var dataTech = readJSON('tech-skills');
-    var dataDomn = readJSON('domain-skills');
-    var dataAssn = readJSON('assignments');
+    var dataDomn = readJSON('domain-skills')['Domain Skills'];
+    var dataAssn = readJSON('assignments')['Assignments'];
     // dataTech['SAS Specialist'].forEach((item) => {
     //     console.log(item);
     // })

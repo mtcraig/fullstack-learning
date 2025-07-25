@@ -21,52 +21,52 @@
                 {
                     "badge": "assets/tech/sas.png",
                     "tech": "Enterprise Guide",
-                    "style": null
+                    "style": "primary"
                 },
                 {
                     "badge": "assets/tech/sas.png",
                     "tech": "Studio",
-                    "style": null
+                    "style": "primary"
                 },
                 {
                     "badge": "assets/tech/python.png",
                     "tech": "Python",
-                    "style": null
+                    "style": "secondary"
                 },
                 {
                     "badge": "assets/tech/tableau.png",
                     "tech": "Tableau",
-                    "style": null
+                    "style": "warning"
                 },
                 {
                     "badge": "assets/tech/power-bi.png",
                     "tech": "Power BI",
-                    "style": null
+                    "style": "warning"
                 },
                 {
                     "badge": "assets/tech/snowflake.png",
                     "tech": "Snowflake",
-                    "style": null
+                    "style": "info"
                 },
                 {
                     "badge": "assets/tech/datagrip.png",
                     "tech": "DataGrip",
-                    "style": null
+                    "style": "secondary"
                 },
                 {
                     "badge": "assets/tech/hadoop.png",
                     "tech": "Hadoop / Hue",
-                    "style": null
+                    "style": "warning"
                 },
                 {
                     "badge": "assets/tech/ms-sql-server.png",
                     "tech": "Microsoft SQL Server",
-                    "style": null
+                    "style": "primary"
                 },
                 {
                     "badge": "assets/tech/teradata.png",
                     "tech": "Teradata",
-                    "style": null
+                    "style": "warning"
                 }
             ],
             "highlights": [
@@ -97,27 +97,27 @@
                 {
                     "badge": "assets/tech/sas.png",
                     "tech": "Enterprise Guide",
-                    "style": null
+                    "style": "primary"
                 },
                 {
                     "badge": "assets/tech/sas.png",
                     "tech": "Studio",
-                    "style": null
+                    "style": "primary"
                 },
                 {
                     "badge": "assets/tech/sas.png",
                     "tech": "Management Console",
-                    "style": null
+                    "style": "primary"
                 },
                 {
                     "badge": "assets/tech/unix.png",
                     "tech": null,
-                    "style": null
+                    "style": "secondary"
                 },
                 {
                     "badge": "assets/tech/ibm.png",
                     "tech": "LSF Flow Manager",
-                    "style": null
+                    "style": "info"
                 }
             ],
             "highlights": [
@@ -146,17 +146,17 @@
                 {
                     "badge": "assets/tech/sas.png",
                     "tech": "Base",
-                    "style": null
+                    "style": "primary"
                 },
                 {
                     "badge": "assets/tech/sas.png",
                     "tech": "Enterprise Guide",
-                    "style": null
+                    "style": "primary"
                 },
                 {
                     "badge": "assets/tech/sas.png",
                     "tech": "DI Studio",
-                    "style": null
+                    "style": "primary"
                 }
             ],
             "highlights": [
@@ -178,7 +178,7 @@
                 {
                     "badge": "assets/tech/sas.png",
                     "tech": "DI Studio",
-                    "style": null
+                    "style": "primary"
                 }
             ],
             "highlights": [
@@ -200,12 +200,12 @@
                 {
                     "badge": "assets/tech/sas.png",
                     "tech": "DataFlux",
-                    "style": null
+                    "style": "primary"
                 },
                 {
                     "badge": "assets/tech/sas.png",
                     "tech": "DI Studio",
-                    "style": null
+                    "style": "primary"
                 }
             ],
             "highlights": [
@@ -235,22 +235,22 @@
                 {
                     "badge": "assets/tech/sas.png",
                     "tech": "Enterprise Guide",
-                    "style": null
+                    "style": "primary"
                 },
                 {
                     "badge": "assets/tech/vba.svg",
                     "tech": "DI Studio",
-                    "style": null
+                    "style": "primary"
                 },
                 {
                     "badge": "assets/tech/sap-bo.png",
                     "tech": null,
-                    "style": null
+                    "style": "info"
                 },
                 {
                     "badge": "assets/tech/access.png",
                     "tech": "Access",
-                    "style": null
+                    "style": "danger"
                 }
             ],
             "highlights": [
