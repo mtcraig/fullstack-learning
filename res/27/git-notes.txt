@@ -1,0 +1,9 @@
+git log
+git status
+
+git add .
+git add *
+
+git commit 
+
+touch .gitignore
