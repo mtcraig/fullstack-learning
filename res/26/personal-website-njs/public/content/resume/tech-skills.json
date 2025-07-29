@@ -43,20 +43,28 @@
             "tech": "Unix"
         },
         {
+            "badge": "assets/tech/ibm.png",
+            "tech": "IBM LSF Process Manager"
+        },
+        {
             "badge": "assets/tech/vba.svg",
             "tech": "VBA"
         },
         {
-            "badge": "assets/tech/html.png",
+            "badge": "assets/tech/html5.png",
             "tech": "HTML"
+        },
+        {
+            "badge": "assets/tech/nodejs.svg",
+            "tech": "Node.JS"
+        },
+        {
+            "badge": "assets/tech/express.png",
+            "tech": "Express JS"
         },
         {
             "badge": "assets/tech/bootstrap.png",
             "tech": "Bootstrap"
-        },
-        {
-            "badge": "assets/tech/ibm.png",
-            "tech": "IBM LSF Process Manager"
         }
     ],
     "Databases and Platforms": [

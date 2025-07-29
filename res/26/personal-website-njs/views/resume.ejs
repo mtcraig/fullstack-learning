@@ -1,4 +1,5 @@
-<%- include('partials/header.ejs') %>
+<%- include(viewsDir + 'partials/header.ejs') %>
+<%- include(viewsDir + 'partials/nav.ejs') %>
 
         <section id="Summary">
 
@@ -18,25 +19,18 @@
             <div class="container px-4 pt-4" id="featured-3">
                 <h2 class="pb-2 border-bottom">History</h2>
                 <div class="list-group py-4 px-2">
-                    <a class="list-group-item d-flex gap-3 py-3 bg-primary-subtle"
-                        aria-current="true"> <img src="../assets/emp/talan.svg" alt="" height="50" flex-shrink-0">
-                        <div class="d-flex gap-2 w-100 justify-content-between">
-                            <div>
-                                <h4 class="mb-0">Talan Data & AI UK</h4>
-                                <p class="mb-0 opacity-75">Senior Consultant</p>
+                    <% dataHist.forEach((item) => { %>
+                        <a class="list-group-item d-flex gap-3 py-3 <% if (item["end"] === "now") { %> bg-primary-subtle <% } %>"
+                            aria-current="true"> <img src=<%= item["logo"] %> alt=<%= item["company"] %> height="50" flex-shrink-0>
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                <div>
+                                    <h4 class="mb-0 <% if (item["end"] === "now") { %> opacity-100 <% } else { %> opacity-50 <% } %>"><%= item["company"] %></h4>
+                                    <p class="mb-0 <% if (item["end"] === "now") { %> opacity-75 <% } else { %> opacity-25 <% } %>"><%= item["role"] %></p>
+                                </div>
+                                <small class="<% if (item["end"] === "now") { %> opacity-100 <% } else { %> opacity-50 <% } %>text-nowrap"><%= item["start"] %> - <%= item["end"] %></small>
                             </div>
-                            <small class="opacity-100 text-nowrap">2018 - now</small>
-                        </div>
-                    </a>
-                    <a class="list-group-item d-flex gap-3 py-3"
-                        aria-current="true"> <img src="../assets/emp/sopra.png" alt="Sopra Steria" height="32" flex-shrink-0">
-                        <div class="d-flex gap-2 w-100 justify-content-between">
-                            <div>
-                                <h4 class="mb-0 opacity-50">Sopra Steria</h4>
-                                <p class="mb-0 opacity-25">Consultant</p>
-                            </div> <small class="opacity-50 text-nowrap">2014 - 2018</small>
-                        </div>
-                    </a>
+                        </a>
+                    <% }) %>
                 </div>
             </div>
 
@@ -182,4 +176,4 @@
 
     </body>
     
-<%- include('partials/footer.ejs') %>
+<%- include(viewsDir + 'partials/footer.ejs') %>

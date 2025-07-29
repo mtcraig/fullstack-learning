@@ -1,0 +1,39 @@
+[
+    {
+        "page": "Home",
+        "target": "/"
+    },
+    {
+        "page": "About Me",
+        "target": "/about"
+    },
+    {
+        "page": "Resume",
+        "target": "/resume"
+    },
+    {
+        "page": "Portfolio",
+        "target": "/portfolio",
+        "dropdown": [
+            {
+                "page": "Portfolio Overview",
+                "target": "/portfolio"
+            },
+            {
+                "divider": true
+            },
+            {
+                "page": "Golf Society Sweepstakes",
+                "target": "/portfolio/ppp-sweepstakes"
+            },
+            {
+                "page": "Golf Society Site",
+                "target": "/portfolio/ppp-site"
+            }
+        ]
+    },
+    {
+        "page": "Get in Touch",
+        "target": "/contact"
+    }
+]
