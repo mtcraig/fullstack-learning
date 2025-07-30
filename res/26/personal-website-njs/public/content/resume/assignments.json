@@ -86,7 +86,7 @@
                 {
                     "badge": "assets/tech/ms-sql-server.png",
                     "tech": "Microsoft SQL Server",
-                    "style": "primary"
+                    "style": "info"
                 },
                 {
                     "badge": "assets/tech/teradata.png",
@@ -278,7 +278,7 @@
                     "style": "primary"
                 },
                 {
-                    "badge": "assets/tech/vba.svg",
+                    "badge": "assets/tech/sas.png",
                     "tech": "DI Studio",
                     "style": "primary"
                 },

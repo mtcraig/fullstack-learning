@@ -1,6 +1,9 @@
 <%- include(viewsDir + 'partials/header.ejs') %>
 <%- include(viewsDir + 'partials/nav.ejs') %>
 
+
+    <section id="Resume">
+
         <section id="Summary">
 
             <div class="container p-4 pt-50">
@@ -17,7 +20,7 @@
         <section id="History">
 
             <div class="container px-4 pt-4">
-                <h2 class="pb-2 border-bottom">History<button class="btn" data-bs-toggle="collapse" data-bs-target="#sec-history">Collapse/Expand</button></h2></h2>
+                <h2 class="pb-2 border-bottom" data-bs-toggle="collapse" data-bs-target="#sec-history">History</h2>
                 <div class="list-group py-4 px-2 collapse show" id="sec-history">
                     <% dataHist.forEach((item) => { %>
                         <a class="list-group-item d-flex gap-3 py-3 <% if (item["end"] === "now") { %> bg-primary bg-opacity-25 <% } else { %> bg-secondary bg-opacity-25 <% } %>"
@@ -39,7 +42,7 @@
         <section id="Qualifications">
 
             <div class="container px-4 pt-4">
-                <h2 class="pb-2 border-bottom">Qualifications<button class="btn" data-bs-toggle="collapse" data-bs-target="#sec-quals">Collapse/Expand</button></h2>
+                <h2 class="pb-2 border-bottom"data-bs-toggle="collapse" data-bs-target="#sec-quals">Qualifications</h2>
                 <div class="card px-2 mt-4 rounded-3 bg-secondary bg-opacity-25 collapse show" id="sec-quals">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-4">
                         <% dataQual.forEach((item) => { %>
@@ -61,7 +64,7 @@
         <section id="TechSkills">
 
             <div class="container px-4 pt-4">
-                <h2 class="pb-2 border-bottom">Technical Skills<button class="btn" data-bs-toggle="collapse" data-bs-target="#sec-tech">Collapse/Expand</button></h2>
+                <h2 class="pb-2 border-bottom" data-bs-toggle="collapse" data-bs-target="#sec-tech">Technical Skills</h2>
                 <div class="collapse show" id="sec-tech">
 
                     <% Object.keys(dataTech).forEach((key) => { %>
@@ -98,8 +101,8 @@
 
         <section id="DomainSkills">
 
-            <div class="container px-4 pt-5">
-                <h2 class="pb-2 border-bottom">Domain and Functional Skills<button class="btn" data-bs-toggle="collapse" data-bs-target="#sec-domn">Collapse/Expand</button></h2>
+            <div class="container px-4 pt-4">
+                <h2 class="pb-2 border-bottom" data-bs-toggle="collapse" data-bs-target="#sec-domn">Domain and Functional Skills</h2>
                 <div class="container px-2 collapse show" id="sec-domn">
                     <div class="row row-cols-2 row-cols-lg-4 align-items-stretch g-4 py-4">
                         <% dataDomn.forEach((item) => { %>
@@ -120,8 +123,8 @@
 
         <section id="Assignments">
 
-            <div class="container px-4 pt-5">
-                <h2 class="pb-2 border-bottom">Recent Assignments<button class="btn" data-bs-toggle="collapse" data-bs-target="#sec-assgn">Collapse/Expand</button></h2>
+            <div class="container px-4 pt-4">
+                <h2 class="pb-2 border-bottom" data-bs-toggle="collapse" data-bs-target="#sec-assgn">Recent Assignments</h2>
                     <div class="collapse show" id="sec-assgn">
 
                     <% dataAssn.forEach((item) => { %>
@@ -129,7 +132,7 @@
                         <% if (item.inactive !== true) { %>
                     
                             <div class="container mt-4 px-2 py-50">
-                                <div class="p-4 text-center rounded-3 bg-primary bg-opacity-25">
+                                <div class="p-4 text-center rounded-3 bg-secondary bg-opacity-25">
                                     <div>
                                         <h2 class="text-body-emphasis"><%= item['client'] %></h2>
                                         <h3 class="text-body-secondary"><%= item['role'] %></h3>
@@ -137,7 +140,7 @@
                                         <div class="py-4 badge-grid">
                                             <% item['domain-tags'].forEach((domain) => { %>
                                                 <span
-                                                    class="badge d-flex align-items-center py-1.5 px-3 text-secondary-emphasis bg-secondary bg-opacity-50 border border-secondary-subtle rounded-pill">
+                                                    class="badge d-flex align-items-center py-1.5 px-3 text-dark-emphasis bg-dark-subtle bg-opacity-50 border border-secondary-subtle rounded-pill domn-badge">
                                                     <%= domain %>
                                                 </span>
                                             <% }) %>
@@ -182,6 +185,8 @@
             </div>
 
         </section>
+
+    </section>
 
     </body>
     
