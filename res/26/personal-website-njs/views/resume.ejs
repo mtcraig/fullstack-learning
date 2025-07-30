@@ -16,9 +16,9 @@
 
         <section id="History">
 
-            <div class="container px-4 pt-4" id="featured-3">
-                <h2 class="pb-2 border-bottom">History</h2>
-                <div class="list-group py-4 px-2">
+            <div class="container px-4 pt-4">
+                <h2 class="pb-2 border-bottom">History<button class="btn" data-bs-toggle="collapse" data-bs-target="#sec-history">Collapse/Expand</button></h2></h2>
+                <div class="list-group py-4 px-2 collapse show" id="sec-history">
                     <% dataHist.forEach((item) => { %>
                         <a class="list-group-item d-flex gap-3 py-3 <% if (item["end"] === "now") { %> bg-primary bg-opacity-25 <% } else { %> bg-secondary bg-opacity-25 <% } %>"
                             aria-current="true"> <img src=<%= item["logo"] %> alt=<%= item["company"] %> height="50" flex-shrink-0>
@@ -38,21 +38,21 @@
 
         <section id="Qualifications">
 
-            <div class="container px-4 pt-4" id="icon-grid">
-                <h2 class="pb-2 border-bottom">Qualifications</h2>
-                <div class="card px-2 mt-4 rounded-3 bg-secondary bg-opacity-25">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-4">
-                    <% dataQual.forEach((item) => { %>
-                        <div class="col d-flex align-items-start qual-item">
-                            <img src=<%= item['badge'] %> alt=<%= item['qualification'] %> class="bi text-body-secondary flex-shrink-0 me-3"
-                                width="50" aria-hidden="true">
-                            <div>
-                                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><%= item['qualification'] %></h3>
-                                <p><%= item['byline'] %></p>
+            <div class="container px-4 pt-4">
+                <h2 class="pb-2 border-bottom">Qualifications<button class="btn" data-bs-toggle="collapse" data-bs-target="#sec-quals">Collapse/Expand</button></h2>
+                <div class="card px-2 mt-4 rounded-3 bg-secondary bg-opacity-25 collapse show" id="sec-quals">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-4">
+                        <% dataQual.forEach((item) => { %>
+                            <div class="col d-flex align-items-start qual-item">
+                                <img src=<%= item['badge'] %> alt=<%= item['qualification'] %> class="bi text-body-secondary flex-shrink-0 me-3"
+                                    width="50" aria-hidden="true">
+                                <div>
+                                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><%= item['qualification'] %></h3>
+                                    <p><%= item['byline'] %></p>
+                                </div>
                             </div>
-                        </div>
-                    <% }) %>
-                </div>
+                        <% }) %>
+                    </div>
                 </div>
             </div>
 
@@ -60,45 +60,47 @@
 
         <section id="TechSkills">
 
-            <div class="container px-4 pt-4" id="icon-grid">
-                <h2 class="pb-2 border-bottom">Technical Skills</h2>
+            <div class="container px-4 pt-4">
+                <h2 class="pb-2 border-bottom">Technical Skills<button class="btn" data-bs-toggle="collapse" data-bs-target="#sec-tech">Collapse/Expand</button></h2>
+                <div class="collapse show" id="sec-tech">
 
-                <% Object.keys(dataTech).forEach((key) => { %>
+                    <% Object.keys(dataTech).forEach((key) => { %>
 
-                    <div class="container mt-4 px-2 py-50">
-                        <div class="p-4 text-center rounded-3 bg-secondary bg-opacity-25">
-                            <div>
-                                <h4 class="text-body-emphasis"><%= key %></h4>
-                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 pt-5">
+                        <div class="container mt-4 px-2 py-50">
+                            <div class="p-4 text-center rounded-3 bg-secondary bg-opacity-25">
+                                <div>
+                                    <h4 class="text-body-emphasis"><%= key %></h4>
+                                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 pt-5">
 
-                                    <% dataTech[key].forEach((item) => { %>
+                                        <% dataTech[key].forEach((item) => { %>
 
-                                        <div class="col d-flex align-items-start skills">
-                                            <img src=<%= item['badge'] %> alt=<%= item['tech'] %> class="bi text-body-secondary flex-shrink-0 me-3"
-                                                width="50" aria-hidden="true">
-                                            <div>
-                                                <h3 class="fw-light mb-0 fs-4 text-body-emphasis"><%= item['tech'] %></h3>
+                                            <div class="col d-flex align-items-start skills">
+                                                <img src=<%= item['badge'] %> alt=<%= item['tech'] %> class="bi text-body-secondary flex-shrink-0 me-3"
+                                                    width="50" aria-hidden="true">
+                                                <div>
+                                                    <h3 class="fw-light mb-0 fs-4 text-body-emphasis"><%= item['tech'] %></h3>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                    <% }) %>
+                                        <% }) %>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                <% }) %>
+                    <% }) %>
 
+                </div>
             </div>
 
         </section>
 
         <section id="DomainSkills">
 
-            <div class="container px-4 pt-5" id="icon-grid">
-                <h2 class="pb-2 border-bottom">Domain and Functional Skills</h2>
-                <div class="container px-2">
+            <div class="container px-4 pt-5">
+                <h2 class="pb-2 border-bottom">Domain and Functional Skills<button class="btn" data-bs-toggle="collapse" data-bs-target="#sec-domn">Collapse/Expand</button></h2>
+                <div class="container px-2 collapse show" id="sec-domn">
                     <div class="row row-cols-2 row-cols-lg-4 align-items-stretch g-4 py-4">
                         <% dataDomn.forEach((item) => { %>
                             <div class="col">
@@ -119,62 +121,64 @@
         <section id="Assignments">
 
             <div class="container px-4 pt-5">
-                <h2 class="pb-2 border-bottom">Recent Assignments</h2>
+                <h2 class="pb-2 border-bottom">Recent Assignments<button class="btn" data-bs-toggle="collapse" data-bs-target="#sec-assgn">Collapse/Expand</button></h2>
+                    <div class="collapse show" id="sec-assgn">
 
-                <% dataAssn.forEach((item) => { %>
+                    <% dataAssn.forEach((item) => { %>
 
-                    <% if (item.inactive !== true) { %>
-
-                        <div class="container mt-4 px-2 py-50">
-                            <div class="p-4 text-center rounded-3 bg-primary bg-opacity-25">
-                                <div>
-                                    <h2 class="text-body-emphasis"><%= item['client'] %></h2>
-                                    <h3 class="text-body-secondary"><%= item['role'] %></h3>
-                                    <h6 class="text-body-tertiary"><%= item['start'] %> - <%= item['end'] %></h6>
+                        <% if (item.inactive !== true) { %>
+                    
+                            <div class="container mt-4 px-2 py-50">
+                                <div class="p-4 text-center rounded-3 bg-primary bg-opacity-25">
+                                    <div>
+                                        <h2 class="text-body-emphasis"><%= item['client'] %></h2>
+                                        <h3 class="text-body-secondary"><%= item['role'] %></h3>
+                                        <h6 class="text-body-tertiary"><%= item['start'] %> - <%= item['end'] %></h6>
+                                        <div class="py-4 badge-grid">
+                                            <% item['domain-tags'].forEach((domain) => { %>
+                                                <span
+                                                    class="badge d-flex align-items-center py-1.5 px-3 text-secondary-emphasis bg-secondary bg-opacity-50 border border-secondary-subtle rounded-pill">
+                                                    <%= domain %>
+                                                </span>
+                                            <% }) %>
+                                        </div>
+                                        <% item['summary'].forEach((para) => { %>                                        
+                                            <p class="lead">
+                                                <%= para %>
+                                            </p>
+                                        <% }) %>
+                                    </div>
                                     <div class="py-4 badge-grid">
-                                        <% item['domain-tags'].forEach((domain) => { %>
+                                        <% item['tech-tags'].forEach((tech) => { %>
                                             <span
-                                                class="badge d-flex align-items-center py-1.5 px-3 text-secondary-emphasis bg-secondary bg-opacity-50 border border-secondary-subtle rounded-pill">
-                                                <%= domain %>
+                                                class="badge d-flex align-items-center pt-1 pe-2 text-<%= tech['style'] %>-emphasis bg-<%= tech['style'] %>-subtle border border-<%= tech['style'] %>-subtle rounded-pill">
+                                                <img class="mx-1" height="24" src=<%= tech['badge'] %> alt=<%= tech['tech'] %>><%= tech['tech'] %>
                                             </span>
                                         <% }) %>
                                     </div>
-                                    <% item['summary'].forEach((para) => { %>                                        
-                                        <p class="lead">
-                                            <%= para %>
-                                        </p>
-                                    <% }) %>
-                                </div>
-                                <div class="py-4 badge-grid">
-                                    <% item['tech-tags'].forEach((tech) => { %>
-                                        <span
-                                            class="badge d-flex align-items-center pt-1 pe-2 text-<%= tech['style'] %>-emphasis bg-<%= tech['style'] %>-subtle border border-<%= tech['style'] %>-subtle rounded-pill">
-                                            <img class="mx-1" height="24" src=<%= tech['badge'] %> alt=<%= tech['tech'] %>><%= tech['tech'] %>
-                                        </span>
-                                    <% }) %>
-                                </div>
-                                <div class="container px-1 assignment-cards">
-                                    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
-                                        <% item['highlights'].forEach((highlight) => { %>
-                                            <div class="col">
-                                                <div class="card card-cover h-100 overflow-hidden text-bg-dark bg-opacity-50 rounded-4">
-                                                    <div class="d-flex flex-column h-100 p-3 text-white text-shadow-1">
-                                                        <p class="pt-1 mt-1 mb-1 display-10 lh-1 ">
-                                                            <%= highlight %>
-                                                        </p>
+                                    <div class="container px-1 assignment-cards">
+                                        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
+                                            <% item['highlights'].forEach((highlight) => { %>
+                                                <div class="col">
+                                                    <div class="card card-cover h-100 overflow-hidden text-bg-dark bg-opacity-50 rounded-4">
+                                                        <div class="d-flex flex-column h-100 p-3 text-white text-shadow-1">
+                                                            <p class="pt-1 mt-1 mb-1 display-10 lh-1 ">
+                                                                <%= highlight %>
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        <% }) %>
+                                            <% }) %>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                    <% } %>
+                        <% } %>
+                
+                    <% }) %>
 
-                <% }) %>
-
+                </div>
             </div>
 
         </section>
