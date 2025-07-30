@@ -4,7 +4,7 @@
         <section id="Summary">
 
             <div class="container p-4 pt-50">
-                <div class="mt-5 p-5 text-center bg-primary-subtle rounded-3">
+                <div class="mt-5 p-5 text-center bg-primary bg-opacity-25 rounded-3">
                     <h1 id="currRole" class="text-body-emphasis"><%= dataSumm['currRole'] %></h1>
                     <p class="lead">
                         <%= dataSumm['currDesc'] %>
@@ -20,14 +20,14 @@
                 <h2 class="pb-2 border-bottom">History</h2>
                 <div class="list-group py-4 px-2">
                     <% dataHist.forEach((item) => { %>
-                        <a class="list-group-item d-flex gap-3 py-3 <% if (item["end"] === "now") { %> bg-primary-subtle <% } %>"
+                        <a class="list-group-item d-flex gap-3 py-3 <% if (item["end"] === "now") { %> bg-primary bg-opacity-25 <% } else { %> bg-secondary bg-opacity-25 <% } %>"
                             aria-current="true"> <img src=<%= item["logo"] %> alt=<%= item["company"] %> height="50" flex-shrink-0>
                             <div class="d-flex gap-2 w-100 justify-content-between">
                                 <div>
-                                    <h4 class="mb-0 <% if (item["end"] === "now") { %> opacity-100 <% } else { %> opacity-50 <% } %>"><%= item["company"] %></h4>
-                                    <p class="mb-0 <% if (item["end"] === "now") { %> opacity-75 <% } else { %> opacity-25 <% } %>"><%= item["role"] %></p>
+                                    <h4 class="mb-0 <% if (item["end"] === "now") { %> opacity-100 <% } else { %> opacity-75 <% } %>"><%= item["company"] %></h4>
+                                    <p class="mb-0 <% if (item["end"] === "now") { %> opacity-75 <% } else { %> opacity-50 <% } %>"><%= item["role"] %></p>
                                 </div>
-                                <small class="<% if (item["end"] === "now") { %> opacity-100 <% } else { %> opacity-50 <% } %>text-nowrap"><%= item["start"] %> - <%= item["end"] %></small>
+                                <small class="<% if (item["end"] === "now") { %> opacity-100 <% } else { %> opacity-75 <% } %>text-nowrap"><%= item["start"] %> - <%= item["end"] %></small>
                             </div>
                         </a>
                     <% }) %>
@@ -40,7 +40,7 @@
 
             <div class="container px-4 pt-4" id="icon-grid">
                 <h2 class="pb-2 border-bottom">Qualifications</h2>
-                <div class="card px-2 mt-4 rounded-3 bg-secondary-subtle">
+                <div class="card px-2 mt-4 rounded-3 bg-secondary bg-opacity-25">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-4">
                     <% dataQual.forEach((item) => { %>
                         <div class="col d-flex align-items-start qual-item">
@@ -66,7 +66,7 @@
                 <% Object.keys(dataTech).forEach((key) => { %>
 
                     <div class="container mt-4 px-2 py-50">
-                        <div class="p-4 text-center bg-body-tertiary rounded-3 bg-secondary-subtle">
+                        <div class="p-4 text-center rounded-3 bg-secondary bg-opacity-25">
                             <div>
                                 <h4 class="text-body-emphasis"><%= key %></h4>
                                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 pt-5">
@@ -123,50 +123,55 @@
 
                 <% dataAssn.forEach((item) => { %>
 
-                    <div class="container mt-4 px-2 py-50">
-                        <div class="p-4 text-center bg-body-tertiary rounded-3 bg-primary-subtle">
-                            <div>
-                                <h2 class="text-body-emphasis"><%= item['client'] %></h2>
-                                <h3 class="text-body-secondary"><%= item['role'] %></h3>
+                    <% if (item.inactive !== true) { %>
+
+                        <div class="container mt-4 px-2 py-50">
+                            <div class="p-4 text-center rounded-3 bg-primary bg-opacity-25">
+                                <div>
+                                    <h2 class="text-body-emphasis"><%= item['client'] %></h2>
+                                    <h3 class="text-body-secondary"><%= item['role'] %></h3>
+                                    <h6 class="text-body-tertiary"><%= item['start'] %> - <%= item['end'] %></h6>
+                                    <div class="py-4 badge-grid">
+                                        <% item['domain-tags'].forEach((domain) => { %>
+                                            <span
+                                                class="badge d-flex align-items-center py-1.5 px-3 text-secondary-emphasis bg-secondary bg-opacity-50 border border-secondary-subtle rounded-pill">
+                                                <%= domain %>
+                                            </span>
+                                        <% }) %>
+                                    </div>
+                                    <% item['summary'].forEach((para) => { %>                                        
+                                        <p class="lead">
+                                            <%= para %>
+                                        </p>
+                                    <% }) %>
+                                </div>
                                 <div class="py-4 badge-grid">
-                                    <% item['domain-tags'].forEach((domain) => { %>
+                                    <% item['tech-tags'].forEach((tech) => { %>
                                         <span
-                                            class="badge d-flex align-items-center py-1.5 px-3 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
-                                            <%= domain %>
+                                            class="badge d-flex align-items-center pt-1 pe-2 text-<%= tech['style'] %>-emphasis bg-<%= tech['style'] %>-subtle border border-<%= tech['style'] %>-subtle rounded-pill">
+                                            <img class="mx-1" height="24" src=<%= tech['badge'] %> alt=<%= tech['tech'] %>><%= tech['tech'] %>
                                         </span>
                                     <% }) %>
                                 </div>
-                                <% item['summary'].forEach((para) => { %>                                        
-                                    <p class="lead">
-                                        <%= para %>
-                                    </p>
-                                <% }) %>
-                            </div>
-                            <div class="py-4 badge-grid">
-                                <% item['tech-tags'].forEach((tech) => { %>
-                                    <span
-                                        class="badge d-flex align-items-center pt-1 pe-2 text-<%= tech['style'] %>-emphasis bg-<%= tech['style'] %>-subtle border border-<%= tech['style'] %>-subtle rounded-pill">
-                                        <img class="mx-1" height="24" src=<%= tech['badge'] %> alt=<%= tech['tech'] %>><%= tech['tech'] %>
-                                    </span>
-                                <% }) %>
-                            </div>
-                            <div class="container px-1 assignment-cards">
-                                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
-                                    <% item['highlights'].forEach((highlight) => { %>
-                                        <div class="col">
-                                            <div class="card card-cover h-100 overflow-hidden text-bg-dark bg-opacity-50 rounded-4">
-                                                <div class="d-flex flex-column h-100 p-3 text-white text-shadow-1">
-                                                    <p class="pt-1 mt-1 mb-1 display-10 lh-1 ">
-                                                        <%= highlight %>
-                                                    </p>
+                                <div class="container px-1 assignment-cards">
+                                    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
+                                        <% item['highlights'].forEach((highlight) => { %>
+                                            <div class="col">
+                                                <div class="card card-cover h-100 overflow-hidden text-bg-dark bg-opacity-50 rounded-4">
+                                                    <div class="d-flex flex-column h-100 p-3 text-white text-shadow-1">
+                                                        <p class="pt-1 mt-1 mb-1 display-10 lh-1 ">
+                                                            <%= highlight %>
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    <% }) %>
+                                        <% }) %>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+
+                    <% } %>
 
                 <% }) %>
 

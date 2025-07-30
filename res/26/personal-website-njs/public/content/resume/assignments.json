@@ -1,8 +1,33 @@
 {
     "Assignments": [
         {
+            "inactive": true,
+            "client": "Retail Bank",
+            "role": "Consultant",
+            "start": "Aug 2025",
+            "end": "present",
+            "domain-tags": [
+                "BAU"
+            ],
+            "summary": [
+                ""
+            ],
+            "tech-tags": [
+                {
+                    "badge": "assets/tech/teradata.png",
+                    "tech": "Teradata",
+                    "style": "warning"
+                }
+            ],
+            "highlights": [
+                ""
+            ]
+        },
+        {
             "client": "Retail Bank - Data & Analytics",
             "role": "Data Analyst / Consultant",
+            "start": "Jan 2021",
+            "end": "Mar 2025",
             "domain-tags": [
                 "HMT Breathing Space",
                 "Cost of Living",
@@ -45,7 +70,7 @@
                 },
                 {
                     "badge": "assets/tech/snowflake.png",
-                    "tech": "Snowflake",
+                    "tech": "",
                     "style": "info"
                 },
                 {
@@ -82,6 +107,8 @@
         {
             "client": "Retail Bank - Data Migration / Separation",
             "role": "Migration Consultant",
+            "start": "Aug 2018",
+            "end": "Nov 2019",
             "domain-tags": [
                 "Data Migration",
                 "Code Refactoring",
@@ -91,7 +118,9 @@
                 "Project Management"
             ],
             "summary": [
-                ""
+                "This project was a collaboration across consultancies with the client to divide their existing data warehouse from a subsiduary now separating, whilst simultaneously upgrading their IT package, SAS platform, and replatforming shared legacy warehouses.",
+                "My first year on the project focussed on replatforming from a DB2 warehouse using complied COBOL to a new SAS 9.4 warehouse, and required reverse engineering and process design while devising new standards for data quality and validation with stakeholders.",
+                "As the project progressed I also moved over to aid with SAS/Python code migration, SAS environment setup alongside a SAS implementation SME, and various testing functions."
             ],
             "tech-tags": [
                 {
@@ -132,6 +161,8 @@
         {
             "client": "Retail Bank - Change Management",
             "role": "Incident Resolution Analyst",
+            "start": "2017",
+            "end": "Aug 2018",
             "domain-tags": [
                 "Process Debugging",
                 "Data Quality",
@@ -140,7 +171,10 @@
                 "Kanban"
             ],
             "summary": [
-                ""
+                "This role placed me alongside the production monitoring and release team, tasked with picking up process issue and data quality tickets to investigate erroneous processes and data.",
+                "Sometimes this would involve holding processes and data for release to prevent downstream impacts, and others it would entail devising appropriate resolution paths in conjunction with the wider development team.",
+                "Issue resolution involved everything from data analysis, process debugging in lower environments, SME collaborations, and engaging with the Scrum Master to effectively address urgent fixes without disrupting the planned waterfall.",
+                "In many cases, hotfix releases were required to be implemented to production outside the typical schedule, necessitating high degrees of oversight and stringent development and test environment validation."
             ],
             "tech-tags": [
                 {
@@ -167,12 +201,14 @@
         {
             "client": "Retail Bank - IRB / IFRS9",
             "role": "Data Analyst",
+            "start": "2017",
+            "end": "2017",
             "domain-tags": [
                 "ETL",
                 "Process Refactoring"
             ],
             "summary": [
-                ""
+                "This short term role involved going through the existing data warehouse and remapping cross-product fields used by existing and newly proposed IRB/IFRS9 modelling to determine revised ETL processes for data ingestion."
             ],
             "tech-tags": [
                 {
@@ -189,6 +225,8 @@
         {
             "client": "Retail Bank - Data Quality",
             "role": "Data Quality Analyst",
+            "start": "2016",
+            "end": "2017",
             "domain-tags": [
                 "Data Quality"
             ],
@@ -216,6 +254,8 @@
         {
             "client": "Retail Bank - Customer Advocates Office",
             "role": "Data Insight Analyst",
+            "start": "Jul 2014",
+            "end": "2016",
             "domain-tags": [
                 "Remediation",
                 "Product Deep Dives",
