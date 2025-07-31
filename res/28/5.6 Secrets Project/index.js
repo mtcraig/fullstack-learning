@@ -25,7 +25,7 @@ app.get('/', async (req,res) => {
         res.render("index.ejs", body);
     } catch(error) {
         // res.render("index.ejs", { error: error.message});
-        res.status(500)
+        res.status(500);
     }
 })
 
@@ -35,5 +35,5 @@ app.get('/', async (req,res) => {
 
 // 6. Listen on your predefined port and start the server.
 app.listen(port, () => {
-    console.log(`Listening on port ${port}.`)
+    console.log(`Listening on port ${port}.`);
 })

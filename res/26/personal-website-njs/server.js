@@ -10,6 +10,7 @@ const publicDir = path.resolve() + '/public/';
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static("public"));
 
 function readJSON(target) {
     return JSON.parse(fs.readFileSync(`public/content/${target}.json`
