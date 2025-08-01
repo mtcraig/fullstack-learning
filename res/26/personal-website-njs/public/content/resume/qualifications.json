@@ -2,42 +2,42 @@
     "qualifications": [
         {
             "qualification": "SAS Certified Professional",
-            "badge": "assets/quals/sas-cp.png",
+            "badge": "assets/resume/quals/sas-cp.png",
             "byline": "Advanced Programming Using SAS 9.4"
         },
         {
             "qualification": "SAS Certified Specialist",
-            "badge": "assets/quals/sas-cs.png",
+            "badge": "assets/resume/quals/sas-cs.png",
             "byline": "Base Programming Using SAS 9.4"
         },
         {
             "qualification": "AWS Cloud Practioner",
-            "badge": "assets/quals/aws-cp.png",
+            "badge": "assets/resume/quals/aws-cp.png",
             "byline": null
         },
         {
             "qualification": "Azure Fundamentals",
-            "badge": "assets/quals/ms-az-f.png",
+            "badge": "assets/resume/quals/ms-az-f.png",
             "byline": null
         },
         {
             "qualification": "MCSA BI Reporting",
-            "badge": "assets/quals/ms-misc.png",
+            "badge": "assets/resume/quals/ms-misc.png",
             "byline": "Power BI"
         },
         {
             "qualification": "PCEP",
-            "badge": "assets/quals/pcep.png",
+            "badge": "assets/resume/quals/pcep.png",
             "byline": "Entry Level Python Programmer"
         },
         {
             "qualification": "Analysing and Visualising Data",
-            "badge": "assets/quals/ms-misc.png",
+            "badge": "assets/resume/quals/ms-misc.png",
             "byline": "with Microsoft Excel"
         },
         {
             "qualification": "Automotive Engineering Design BEng",
-            "badge": "assets/quals/cov-uni.png",
+            "badge": "assets/resume/quals/cov-uni.png",
             "byline": "First with Honours"
         }
     ]

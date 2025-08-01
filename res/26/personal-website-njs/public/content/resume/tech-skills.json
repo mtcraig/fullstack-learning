@@ -1,153 +1,153 @@
 {
     "SAS Specialist": [
         {
-            "badge": "assets/tech/sas.png",
+            "badge": "assets/resume/tech/sas.png",
             "tech": "Base"
         },
         {
-            "badge": "assets/tech/sas.png",
+            "badge": "assets/resume/tech/sas.png",
             "tech": "Enterprise Guide"
         },
         {
-            "badge": "assets/tech/sas.png",
+            "badge": "assets/resume/tech/sas.png",
             "tech": "Data Integration Studio"
         },
         {
-            "badge": "assets/tech/sas.png",
+            "badge": "assets/resume/tech/sas.png",
             "tech": "Studio"
         },
         {
-            "badge": "assets/tech/sas.png",
+            "badge": "assets/resume/tech/sas.png",
             "tech": "DataFlux"
         },
         {
-            "badge": "assets/tech/sas.png",
+            "badge": "assets/resume/tech/sas.png",
             "tech": "Management Console"
         }
     ],
     "Other Coding Languages": [
         {
-            "badge": "assets/tech/sas.png",
+            "badge": "assets/resume/tech/sas.png",
             "tech": "SAS 9.4"
         },
         {
-            "badge": "assets/tech/sql.png",
+            "badge": "assets/resume/tech/sql.png",
             "tech": "SQL"
         },
         {
-            "badge": "assets/tech/python.png",
+            "badge": "assets/resume/tech/python.png",
             "tech": "Python"
         },
         {
-            "badge": "assets/tech/unix.png",
+            "badge": "assets/resume/tech/unix.png",
             "tech": "Unix"
         },
         {
-            "badge": "assets/tech/ibm.png",
+            "badge": "assets/resume/tech/ibm.png",
             "tech": "IBM LSF Process Manager"
         },
         {
-            "badge": "assets/tech/vba.svg",
+            "badge": "assets/resume/tech/vba.svg",
             "tech": "VBA"
         },
         {
-            "badge": "assets/tech/html5.png",
+            "badge": "assets/resume/tech/html5.png",
             "tech": "HTML"
         },
         {
-            "badge": "assets/tech/nodejs.svg",
+            "badge": "assets/resume/tech/nodejs.svg",
             "tech": "Node.JS"
         },
         {
-            "badge": "assets/tech/express.png",
+            "badge": "assets/resume/tech/express.png",
             "tech": "Express JS"
         },
         {
-            "badge": "assets/tech/bootstrap.png",
+            "badge": "assets/resume/tech/bootstrap.png",
             "tech": "Bootstrap"
         }
     ],
     "Databases and Platforms": [
         {
-            "badge": "assets/tech/teradata.png",
+            "badge": "assets/resume/tech/teradata.png",
             "tech": "Teradata"
         },
         {
-            "badge": "assets/tech/hadoop.png",
+            "badge": "assets/resume/tech/hadoop.png",
             "tech": "Hadoop"
         },
         {
-            "badge": "assets/tech/access.png",
+            "badge": "assets/resume/tech/access.png",
             "tech": "Microsoft Access"
         },
         {
-            "badge": "assets/tech/ms-sql-server.png",
+            "badge": "assets/resume/tech/ms-sql-server.png",
             "tech": "Microsoft SQL Server"
         },
         {
-            "badge": "assets/tech/snowflake.png",
+            "badge": "assets/resume/tech/snowflake.png",
             "tech": "Snowflake"
         },
         {
-            "badge": "assets/tech/hue.png",
+            "badge": "assets/resume/tech/hue.png",
             "tech": "Hue"
         }
     ],
     "Visualisation and Dashboards": [
         {
-            "badge": "assets/tech/power-bi.png",
+            "badge": "assets/resume/tech/power-bi.png",
             "tech": "Microsoft Power BI"
         },
         {
-            "badge": "assets/tech/tableau.png",
+            "badge": "assets/resume/tech/tableau.png",
             "tech": "Tableau"
         },
         {
-            "badge": "assets/tech/sap-bo.png",
+            "badge": "assets/resume/tech/sap-bo.png",
             "tech": "SAP Business Objects"
         }
     ],
     "Development Tools": [
         {
-            "badge": "assets/tech/github.png",
+            "badge": "assets/resume/tech/github.png",
             "tech": "GitHub"
         },
         {
-            "badge": "assets/tech/jira.png",
+            "badge": "assets/resume/tech/jira.png",
             "tech": "Jira"
         },
         {
-            "badge": "assets/tech/gitlab.png",
+            "badge": "assets/resume/tech/gitlab.png",
             "tech": "GitLab"
         },
         {
-            "badge": "assets/tech/datagrip.png",
+            "badge": "assets/resume/tech/datagrip.png",
             "tech": "DataGrip"
         },
         {
-            "badge": "assets/tech/jupyter.png",
+            "badge": "assets/resume/tech/jupyter.png",
             "tech": "Jupyter Notebook"
         },
         {
-            "badge": "assets/tech/confluence.png",
+            "badge": "assets/resume/tech/confluence.png",
             "tech": "Confluence"
         },
         {
-            "badge": "assets/tech/bitbucket.png",
+            "badge": "assets/resume/tech/bitbucket.png",
             "tech": "BitBucket"
         },
         {
-            "badge": "assets/tech/vscode.png",
+            "badge": "assets/resume/tech/vscode.png",
             "tech": "Visual Studio Code"
         }
     ],
     "Office": [
         {
-            "badge": "assets/tech/excel.png",
+            "badge": "assets/resume/tech/excel.png",
             "tech": "Microsoft Excel"
         },
         {
-            "badge": "assets/tech/office.png",
+            "badge": "assets/resume/tech/office.png",
             "tech": "Microsoft Office"
         }
     ]

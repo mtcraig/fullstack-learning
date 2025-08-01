@@ -1,40 +1,48 @@
 {
     "Domain Skills": [
         {
-            "skill": "Data Migration"
+            "skill": "Data Migration",
+            "image": "/assets/resume/domains/markus-spiske-hvSr_CVecVI-unsplash.jpg"
         },
         {
-            "skill": "Data Migration"
+            "skill": "MI Reporting & Dashboards",
+            "image": "/assets/resume/domains/markus-spiske-hvSr_CVecVI-unsplash.jpg"
         },
         {
-            "skill": "MI Reporting & Dashboards"
+            "skill": "Development",
+            "image": "/assets/resume/domains/adrien-Y5ASqegxRr8-unsplash.jpg"
         },
         {
-            "skill": "Development"
+            "skill": "Solution Design",
+            "image": "/assets/resume/domains/kelly-sikkema-gcHFXsdcmJE-unsplash.jpg"
         },
         {
-            "skill": "Regulatory Reporting"
+            "skill": "Regulatory Reporting",
+            "image": "/assets/resume/domains/stephen-dawson-qwtCeJ5cLYs-unsplash.jpg"
         },
         {
-            "skill": "Data Analysis"
+            "skill": "Data Analysis",
+            "image": "/assets/resume/domains/dashboard-deng-xiang-unsplash.jpg"
         },
         {
-            "skill": "Data Visualisation"
+            "skill": "Data Visualisation",
+            "image": "/assets/resume/domains/markus-winkler-IrRbSND5EUc-unsplash.jpg"
         },
         {
-            "skill": "Customer Insight"
+            "skill": "Customer Insight",
+            "image": "/assets/resume/domains/markus-spiske-hvSr_CVecVI-unsplash.jpg"
         },
         {
-            "skill": "Customer Communications"
+            "skill": "Customer Communications",
+            "image": "/assets/resume/domains/markus-spiske-hvSr_CVecVI-unsplash.jpg"
         },
         {
-            "skill": "Credit Cards"
+            "skill": "Credit Cards & Overdrafts",
+            "image": "/assets/resume/domains/towfiqu-barbhuiya-HNPrWOH2Z8U-unsplash.jpg"
         },
         {
-            "skill": "Overdrafts"
-        },
-        {
-            "skill": "Remediation"
+            "skill": "Remediation",
+            "image": "/assets/resume/domains/toa-heftiba-MJg5y4Scdmw-unsplash.jpg"
         }
     ]
 }

@@ -11,6 +11,13 @@ body {
     max-width: 95%;
 }
 
+/* Navbar */
+
+.nav-blur {
+    background-color: #21252995;
+    backdrop-filter: blur(10px);
+}
+
 /* Index */
 
 .carousel-image{
@@ -31,6 +38,11 @@ body {
 .feat-bg {
     background-size: cover;
     background-position: center;
+}
+
+.featurette {
+    background-color: rgba(61, 61, 61, 0.644);
+    padding: 1rem 0.4rem 1rem;
 }
 
 /* Resume */
@@ -75,11 +87,40 @@ body {
     transition: filter 0.3s;
 }
 .card-cover:hover .card-bg {
-    filter: blur(6px);
+    filter: blur(2px);
+    opacity: 75%;
+}
+.card-cover:hover {
+    border-radius: 6px;
+    background-image: linear-gradient(
+        var(--rotate),
+        #5ddcff90,
+        #3c67e390,
+        #4e00c290
+    );
+    animation: spin 10s linear infinite;
 }
 .card-cover > .d-flex {
     position: relative;
     z-index: 2;
+}
+.bg-overlay {    
+    background-color: rgba(44, 39, 39, 0.5); /* Your desired tint color with opacity */
+    background-blend-mode: multiply; /* Experiment with 'screen' or other blend modes */
+}
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
 }
 
 /* Portfolio */

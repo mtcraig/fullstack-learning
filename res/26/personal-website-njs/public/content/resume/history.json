@@ -1,14 +1,14 @@
 [
     {
         "company": "Talan Data x AI UK",
-        "logo": "assets/emp/talan.svg",
+        "logo": "assets/resume/emp/talan.svg",
         "role": "Senior Consultant",
         "start": 2018,
         "end": "now"
     },
     {
         "company": "Sopra Steria",
-        "logo": "assets/emp/sopra.png",
+        "logo": "assets/resume/emp/sopra.png",
         "role": "Consultant",
         "start": 2014,
         "end": 2018

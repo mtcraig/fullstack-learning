@@ -20,7 +20,7 @@ function readJSON(target) {
                         console.error(`File read error: ${target}...`);
                         return;
                     }
-                    console.log('Apparent success?')
+                    console.log(`Successfully loaded content from ${target}...`)
                     // return json.parse(data);
                 }));
 }
@@ -81,7 +81,24 @@ app.get('/resume', (req, res) => {
 app.get('/portfolio', (req, res) => {
     var dataNav = readJSON('nav/navigation');
     var activeNav = 'portfolio';
+    var dataPort = readJSON('portfolio/portfolio');
+    var portSumm = dataPort["summary"];
+    var portProj = dataPort["projects"];
+    console.log(portProj);
     res.render('portfolio.ejs', {
+        viewsDir,
+        publicDir,
+        dataNav,
+        activeNav,
+        portSumm,
+        portProj
+    });
+})
+
+app.get('/portfolio/photography', (req, res) => {
+    var dataNav = readJSON('nav/navigation');
+    var activeNav = 'portfolio';
+    res.render('portfolio/photography.ejs', {
         viewsDir,
         publicDir,
         dataNav,
@@ -91,8 +108,19 @@ app.get('/portfolio', (req, res) => {
 
 app.get('/portfolio/ppp-sweepstakes', (req, res) => {
     var dataNav = readJSON('nav/navigation');
-    var activeNav = 'portfolio/ppp-sweepstakes';
+    var activeNav = 'portfolio';
     res.render('portfolio/ppp-sweepstakes.ejs', {
+        viewsDir,
+        publicDir,
+        dataNav,
+        activeNav
+    });
+})
+
+app.get('/portfolio/ppp-site', (req, res) => {
+    var dataNav = readJSON('nav/navigation');
+    var activeNav = 'portfolio';
+    res.render('portfolio/ppp-site.ejs', {
         viewsDir,
         publicDir,
         dataNav,

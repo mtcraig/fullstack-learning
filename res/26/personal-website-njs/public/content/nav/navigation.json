@@ -23,6 +23,10 @@
                 "divider": true
             },
             {
+                "page": "Photography",
+                "target": "/portfolio/photography"
+            },
+            {
                 "page": "Golf Society Sweepstakes",
                 "target": "/portfolio/ppp-sweepstakes"
             },

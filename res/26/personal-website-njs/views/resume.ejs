@@ -108,9 +108,9 @@
                         <% dataDomn.forEach((item) => { %>
                             <div class="col">
                                 <div class="card card-cover h-100 overflow-hidden rounded-3 position-relative">
-                                    <div class="card-bg" style="background-image: url('../assets/stock/markus-spiske-hvSr_CVecVI-unsplash.jpg');"></div>
+                                    <div class="card-bg bg-overlay" style="background-image: url(<%= item['image'] %>);"></div>
                                     <div class="d-flex flex-column h-100 p-2 position-relative">
-                                        <h3 class="p-4 display-9 lh-1 text-white fw-light"><%= item['skill'] %></h3>
+                                        <h3 class="p-4 display-9 lh-1 text-light fw-light"><%= item['skill'] %></h3>
                                     </div>
                                 </div>
                             </div>

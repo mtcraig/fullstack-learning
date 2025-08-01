@@ -1,3 +1,33 @@
 {
-    
+    "summary": {
+        "title": "My Portfolio",
+        "description": "Many projects I've been able to work on with clients remain their IP, so unfortunately I can't share much if anything about some of the really great solutions I've had the pleasure of working on in the past. However, thanks to recently expanding my knowledge into new domains and really getting into some great new personal projects, I can finally start to share some of the awesome work I've had the chance to sink my teeth into over the last couple of years. Some are passion projects such as Photography, some are pieces I've worked on for family and friends, and plenty more. Take a look!"
+    },
+    "projects": [
+        {
+            "title": "Photography",
+            "client": "-",
+            "description": "Samples of my photography from around the world, including my sabbatical to Canada in 2025, time at Le Mans in 2024, and more...",
+            "thumbnail": "",
+            "date": "2024 - 2025"
+        },
+        {
+            "title": "Golf Society Web Platform",
+            "client": "Putts, Pars & Ponds",
+            "description": "Node.JS website put together for my golf society in 2025...",
+            "thumbnail": "",
+            "date": "2025",
+            "detail": "",
+            "carousel": []
+        },
+        {
+            "title": "Golf Society Sweepstakes",
+            "client": "Putts, Pars & Ponds",
+            "description": "Python codebase supporting our golf society sweepstakes for golf majors, using the ESPN public APIs...",
+            "thumbnail": "",
+            "date": "2025",
+            "detail": "",
+            "carousel": []
+        }
+    ]
 }
