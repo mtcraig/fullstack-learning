@@ -55,7 +55,7 @@ app.put('/jokes/:id', (req,res) => {
 //6. PATCH a joke
 app.patch('/jokes/:id', (req,res) => {
   const id = parseInt(req.params.id)
-  const origJoke = jokes.findIndex((joke) => joke.id === id);
+  const origJoke = jokes.find((joke) => joke.id === id);
   const updJoke = {
     id: id,
     jokeText: req.body.text ? req.body.text : origJoke.jokeText,
