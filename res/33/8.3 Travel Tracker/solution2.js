@@ -10,7 +10,7 @@ const db = new pg.Client({
   user: String(process.env.user),
   host: String(process.env.host),
   database: String(process.env.database),
-  password: String(process.env.pgPwd),
+  password: String(process.env.password),
   port: parseInt(process.env.port)
 });
 db.connect();
