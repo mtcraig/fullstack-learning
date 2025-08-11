@@ -1,3 +1,4 @@
 # Node
 node_modules
 # 23/2.3 NPM/node_modules
+*.env
