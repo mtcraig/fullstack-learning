@@ -21,28 +21,37 @@ app.use(express.static("public"));
 
 let currentUserId = 1;
 
-let users = [
-  { id: 1, name: "Angela", color: "teal" },
-  { id: 2, name: "Jack", color: "powderblue" },
-];
-
-async function checkVisisted() {
-  const result = await db.query("SELECT country_code FROM visited_countries");
+async function checkVisited() {
+  const result = await db.query("SELECT country_code FROM visited_countries where users = $1", [currentUserId]);
   let countries = [];
   result.rows.forEach((country) => {
     countries.push(country.country_code);
   });
   return countries;
 }
+
+async function getAllUsers() {
+  const users = await db.query("SELECT * FROM users");
+  return users.rows;
+}
+
+
+async function getCurrentUser(users) {
+  return users.find((user) => user.id == currentUserId);
+}
+
 app.get("/", async (req, res) => {
-  const countries = await checkVisisted();
+  const users = await getAllUsers();
+  const currentUser = await getCurrentUser(users);
+  const countries = await checkVisited();
   res.render("index.ejs", {
     countries: countries,
     total: countries.length,
     users: users,
-    color: "teal",
+    currentUser: currentUser
   });
 });
+
 app.post("/add", async (req, res) => {
   const input = req.body["country"];
 
@@ -53,11 +62,12 @@ app.post("/add", async (req, res) => {
     );
 
     const data = result.rows[0];
+    console.log(data);
     const countryCode = data.country_code;
     try {
       await db.query(
-        "INSERT INTO visited_countries (country_code) VALUES ($1)",
-        [countryCode]
+        "INSERT INTO visited_countries (country_code, users) VALUES ($1, $2)",
+        [countryCode, currentUserId]
       );
       res.redirect("/");
     } catch (err) {
@@ -67,11 +77,23 @@ app.post("/add", async (req, res) => {
     console.log(err);
   }
 });
-app.post("/user", async (req, res) => {});
+
+app.post("/user", async (req, res) => {
+  if (req.body.add === "new") {
+    res.render("new.ejs");
+  } else {
+    currentUserId = req.body.user;
+    res.redirect("/");
+  }
+});
 
 app.post("/new", async (req, res) => {
   //Hint: The RETURNING keyword can return the data that was inserted.
   //https://www.postgresql.org/docs/current/dml-returning.html
+  const result = await db.query("insert into users (name, colour) values ($1, $2) returning id",
+                                [req.body.name, req.body.colour]);
+  currentUserId = result.rows[0].id;
+  res.redirect("/");
 });
 
 app.listen(port, () => {

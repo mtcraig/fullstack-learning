@@ -9,22 +9,24 @@
 </head>
 
 <body>
-  <form class="tab-view tab-view-height-auto" action="/user" method="post">
-    <% users.forEach(function(user) { %>
-      <input type="submit" name="user" value="<%= user.id %>" id="<%= user.id %>">
-      <label for="<%= user.id %>" style="background-color: <%= user.color %>;">
-        <%= user.name %>
-      </label>
-      <% }); %>
 
-        <input type="submit" name="add" value="new" id="tab">
-        <label for="tab">Add Family Member</label>
+  <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+    <% users.forEach((user) => { %>
+      <form class="tab-view tab-view-height-auto" action="/user" method="post" style="display:inline;">
+        <input type="hidden" name="user" value="<%= user.id %>">
+        <button type="submit" style="background-color: <%= user.colour %>"><%= user.name %></button>
+      </form>
+    <% }); %>
 
-  </form>
+    <form action="/user" method="post" style="display:inline;">
+      <input type="hidden" name="add" value="new" id="tab">
+      <button type="submit" style="color: black; background-color: white;">Add Family Member</button>
+    </form>
+  </div>
 
   <form action="/add" method="post">
     <input type="text" name="country" autofocus placeholder="<%= locals.error ? error :  'Enter country name'%>">
-    <button type="submit" style="background-color: <%= color %>;">Add</button>
+    <button type="submit" style="background-color: <%= currentUser.colour %>">Add</button>
   </form>
 
   <section class="ag-canvas">
@@ -391,7 +393,7 @@
     const country_codes = "<%= countries %>".split(",")
     console.log(typeof ("<%= countries %>"))
     country_codes.forEach(code => {
-      document.getElementById(code).style.fill = "<%= color %>"
+      document.getElementById(code).style.fill = "<%= currentUser.colour %>";
     });
   </script>
 </body>

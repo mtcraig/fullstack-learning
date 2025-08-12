@@ -6,12 +6,13 @@ const app = express();
 const port = 3000;
 
 const db = new pg.Client({
-  user: "postgres",
-  host: "localhost",
-  database: "world",
-  password: "123456",
-  port: 5432,
+  user: String(process.env.user),
+  host: String(process.env.host),
+  database: String(process.env.database),
+  password: String(process.env.password),
+  port: parseInt(process.env.port)
 });
+
 db.connect();
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -20,8 +21,8 @@ app.use(express.static("public"));
 let currentUserId = 1;
 
 let users = [
-  { id: 1, name: "Angela", color: "teal" },
-  { id: 2, name: "Jack", color: "powderblue" },
+  { id: 1, name: "Michael", color: "teal" },
+  { id: 2, name: "Charles", color: "powderblue" },
 ];
 
 async function checkVisisted() {
