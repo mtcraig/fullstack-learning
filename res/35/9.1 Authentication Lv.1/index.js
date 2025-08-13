@@ -6,15 +6,15 @@ import dotenv from "dotenv";
 dotenv.config({ path: './config/.env' });
 
 const app = express();
-const port = 3000;
-const saltRounds = 10;
+const port = process.env.exPort;
+const saltRounds = process.env.bcryptSaltRounds;
 
 const db = new pg.Client({
-  user: String(process.env.user),
-  host: String(process.env.host),
-  database: String(process.env.database),
-  password: String(process.env.password),
-  port: parseInt(process.env.port)
+  user: String(process.env.pgUser),
+  host: String(process.env.pgHost),
+  database: String(process.env.pgDatabase),
+  password: String(process.env.pgPassword),
+  port: parseInt(process.env.pgPort)
 });
 
 db.connect();
