@@ -1,0 +1,10 @@
+// Overrides and Directiories
+$primary: #900;
+$enable-shadows: true;
+$prefix: 'mo-';
+$bootstrap-icons-font-dir: 'bootstrap-icons/font/fonts';
+
+// Imports
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+@import 'add';
